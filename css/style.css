@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+body {
+  background-color: #292c45;
+  font-family: "Work Sans", sans-serif;
+}
+.banner {
+  text-align: center;
+  padding-top: 65px;
+  color: #fff;
+}
+.banner-text {
+  max-width: 850px;
+  margin: auto;
+}
+.banner h1 {
+  font-size: 60px;
+  font-weight: 400;
+  font-family: "Playfair Display", serif;
+}
+.banner ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-left: 0;
+}
+.banner ul li {
+  list-style: none;
+  margin: 20px 20px 0;
+  position: relative;
+  font-size: 20px;
+  font-weight: 300;
+}
+.banner ul li:not(:first-child):before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  top: 5px;
+  left: -25px;
+  background-color: #5b67b8;
+  border-radius: 50px;
+}
+.earth {
+  justify-items: center;
+  margin: top 50px;
+}
+.earth-img {
+  height: auto;
+  padding-top: 300px;
+}
+.circle {
+  width: 700px;
+  height: 700px;
+  display: inline-block;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  position: absolute;
+  top: 375px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.icon {
+  fill: #fff;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  padding: 0px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  background-color: #292c45;
+  transition: all ease 0.5s;
+}
+.icon:hover {
+  border-color: #808de2;
+  background-color: #3951e8;
+  box-shadow: 0 4px 94px #384fde;
+}
+.icon:nth-child(1) {
+  top: -40px;
+  left: 41%;
+  padding: 18px;
+}
+.icon:nth-child(2) {
+  top: 50px;
+  right: 50px;
+  padding: 15px;
+}
+.icon:nth-child(3) {
+  top: 330px;
+  left: -50px;
+  padding: 15px;
+}
+.icon:nth-child(4) {
+  top: 50px;
+  left: 50px;
+}
+.icon:nth-child(5) {
+  top: 550px;
+  left: 50px;
+  padding: 15px;
+}
+.icon:nth-child(6) {
+  top: 330px;
+  left: 650px;
+  padding: 15px;
+}
+.icon:nth-child(7) {
+  /* electrical2 */
+  top: 530px;
+  right: 50px;
+}
+.icon:nth-child(8) {
+  top: 230px;
+  left: 450px;
+  background-color: red;
+}
