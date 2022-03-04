@@ -11,17 +11,22 @@ var content = [
 ];
 
 for (const i of content) {
-	var card = `<div class="cardx" data-aos-offset="200" data-aos-duration="800" data-aos="flip-left" style="width: 18rem">
+	var card = `<div class="cardx" data-aos-offset="200" data-aos-duration="800" data-aos="zoom-in" style="width: 18rem">
+	<div data-aos="fade-up">
     <img
         src="../assets/images/cardsbackground.jpg"
         class="card-img-top"
+		
         alt="..."
         height="200px"
         width="auto"
-    />
+    /></div>
     <div class="card-body" data-aos-duration="1000" data-aos-offset="80" data-aos="fade-down">
 
-        <h5 class="card-title"><span class="card-title-text" >${i.title}</span></h5>
+	<span class="border">
+	<span class="gradient"></span>
+	<span class="container">${i.title}</span>
+  </span>
         <p class="card-text">
             ${i.description}
         </p>
