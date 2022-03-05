@@ -1,3 +1,7 @@
+@font-face {
+  font-family: blanka;
+  src: url(../assets/fonts/Elianto-Regular.otf);
+}
 * {
   margin: 0;
   outline: none;
@@ -19,7 +23,9 @@ body {
 .banner h1 {
   font-size: 60px;
   font-weight: 400;
-  font-family: "Playfair Display", serif;
+  font-family: blanka;
+  word-spacing: -20px;
+  /* letter-spacing: 2px; */
 }
 .banner ul {
   display: flex;
