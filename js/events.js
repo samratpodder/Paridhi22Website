@@ -8,6 +8,8 @@ var content = [
 	{ id: 2, title: "Code Rush", description: "Code Rush is a CP contest" },
 	{ id: 2, title: "Code Rush", description: "Code Rush is a CP contest" },
 	{ id: 2, title: "Code Rush", description: "Code Rush is a CP contest" },
+	{ id: 2, title: "Code Rush", description: "Code Rush is a CP contest" },
+
 ];
 
 for (const i of content) {
@@ -43,3 +45,7 @@ var typed = new Typed(".typedd", {
 	delay: 1000,
 	cursorChar: "|",
 });
+var height  = cards.height();
+var cardsContainer = $(".cards-container");
+console.log(cardsContainer);
+cardsContainer.height(height+100)
