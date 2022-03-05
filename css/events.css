@@ -320,7 +320,8 @@ card design
   /* color: black; */
   background: transparent;
   height: 300px;
-
+  width: 18rem;
+  /* width: 200px; */
   border: 2px inset white;
   border-radius: 5px;
   box-shadow: 0 5px 10px 0 white;
@@ -391,6 +392,8 @@ card design
   align-content: center;
   margin-right: 10px;
   justify-items: center;
+  /* box-sizing: border-box; */
+  /* padding: 10px; */
 }
 .card-body {
   background-color: transparent !important;
@@ -424,10 +427,10 @@ card design
   .sign {
     font-size: 4rem;
   }
-  /* .cardx {
-    width: 200px;
+  .cardx {
+    width: 16rem;
   }
-  .card-img-top {
+  /* .card-img-top {
     height: 150px;
     width: auto;
   } */

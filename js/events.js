@@ -13,7 +13,7 @@ var content = [
 ];
 
 for (const i of content) {
-	var card = `<div class="cardx" data-aos-offset="200" data-aos-duration="800" data-aos="zoom-in" style="width: 18rem">
+	var card = `<div class="cardx" data-aos-offset="200" data-aos-duration="800" data-aos="zoom-in" >
 	<div data-aos="fade-up">
     <img
         src="../assets/images/cardsbackground.jpg"
