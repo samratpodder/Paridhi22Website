@@ -314,11 +314,13 @@ card design
 */
 .card-img-top {
   border-bottom: 2px dotted white;
+  width: 200px;
 }
 .cardx {
   /* color: black; */
   background: transparent;
   height: 300px;
+
   border: 2px inset white;
   border-radius: 5px;
   box-shadow: 0 5px 10px 0 white;
@@ -396,6 +398,23 @@ card design
 }
 .cards::-webkit-scrollbar {
 }
+
+@media screen and (max-width: 1200px) {
+  .cards {
+    grid-gap: 30px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .cards {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+@media screen and (max-width: 700px) {
+  .cards {
+    grid-template-columns: auto;
+  }
+}
 @media screen and (max-width: 500px) {
   .sign {
     font-size: 5rem;
@@ -405,6 +424,16 @@ card design
   .sign {
     font-size: 4rem;
   }
+  .cardx {
+    width: 200px;
+  }
+  .card-img-top {
+    height: 150px;
+    width: auto;
+  }
+  /* .cards {
+    grid-template-columns: repeat(1, auto);
+  } */
 }
 @media screen and (max-width: 290px) {
   .sign {

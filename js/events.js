@@ -45,7 +45,17 @@ var typed = new Typed(".typedd", {
 	delay: 1000,
 	cursorChar: "|",
 });
-var height  = cards.height();
+
 var cardsContainer = $(".cards-container");
 console.log(cardsContainer);
-cardsContainer.height(height+100)
+var height  = cards.height();
+cardsContainer.height(height+100);
+console.log(cardsContainer.height());
+window.onresize = ()=>{
+	var height  = cards.height();
+	cardsContainer.height(height+100);
+	console.log(cardsContainer.height());
+}
+// if(window.innerWidth<1100){
+// 	cardsContainer.height(height+200);
+// }
