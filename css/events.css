@@ -424,13 +424,13 @@ card design
   .sign {
     font-size: 4rem;
   }
-  .cardx {
+  /* .cardx {
     width: 200px;
   }
   .card-img-top {
     height: 150px;
     width: auto;
-  }
+  } */
   /* .cards {
     grid-template-columns: repeat(1, auto);
   } */
