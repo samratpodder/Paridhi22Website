@@ -58,18 +58,24 @@ body {
   padding-bottom: 300px;
   box-shadow: 0 4px 94px #384fde;
 }
-.earth-img {
+/* .earth-img {
   height: auto;
   padding-top: 225px;
+  width: ;
+} */
+.earth-img img {
+  width: 40%;
+  height: auto;
+  margin-top: 140px;
 }
 .circle {
-  width: 700px;
-  height: 700px;
+  width: 44rem;
+  height:44rem;
   display: inline-block;
-  border-radius: 50%;
+  border-radius: 100%;
   border: 1px solid #fff;
-  position: absolute;
-  top: 380px;
+  position: relative;
+  top: -40rem;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -143,15 +149,16 @@ body {
   left: 550px;
 }
 .stone {
-  position: absolute;
-  width: 10px;
-  height: 140px;
+  position: fixed;
+  width: 6px;
+  height: 200px;
+  z-index: -1;
   background-image: linear-gradient(to top, #384284, transparent);
   top: 400px;
   left: 100px;
   border-radius: 50px;
   opacity: 0;
-  animation: stone 7s ease 0s infinite;
+  animation: stone 7s ease-out 0s infinite;
 }
 @keyframes stone {
   from {
