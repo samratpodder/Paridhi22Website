@@ -1,3 +1,7 @@
+@font-face {
+  font-family: elianto;
+  src: url(../assets/fonts/Elianto-Regular.ttf);
+}
 * {
   padding: 0;
   margin: 0;
@@ -5,14 +9,15 @@
 }
 .header-div {
   height: 400px;
-  background-image: url(../assets/images/headerbackground.jpg);
+  background-image: url(../assets/images/header.webp);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
-  /* background-color: #000000; */
+  /* background-color: #010713; */
   width: 100%;
-  filter: blur(2px);
+  /* filter: blur(2px); */
+  filter: brightness(0.3);
   position: absolute;
 }
 .header {
@@ -56,16 +61,17 @@ h1 {
 .cards-container {
   padding-top: 100px;
   /* margin-top: 460px; */
-  min-height: 120vh;
-  background-color: #070435;
-  /* background-image: url(../assets/images/cardsbackground.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	background-attachment: fixed; */
+  height: 180vh;
+  width: 100%;
+  /* background-color: #01010c; */
+  background-image: url(../assets/images/body.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   color: white;
-
-  /* position: absolute; */
+  filter: brightness(0.2);
+  position: absolute;
 }
 
 .cards-content {
@@ -106,7 +112,7 @@ h1 {
   letter-spacing: 2;
   left: 50%;
   top: 50%;
-  font-family: "Clip";
+  font-family: elianto;
   text-transform: uppercase;
   font-size: 6em;
   color: #ffe6ff;
@@ -308,15 +314,19 @@ card design
 */
 .card-img-top {
   border-bottom: 2px dotted white;
+  width: 200px;
 }
 .cardx {
   /* color: black; */
   background: transparent;
   height: 300px;
+  width: 18rem;
+  /* width: 200px; */
   border: 2px inset white;
   border-radius: 5px;
   box-shadow: 0 5px 10px 0 white;
   animation: borderflicker 10s linear infinite;
+  /* filter: brightness(2); */
 }
 .card-title-text {
   /* padding: 5px; */
@@ -382,12 +392,31 @@ card design
   align-content: center;
   margin-right: 10px;
   justify-items: center;
+  /* box-sizing: border-box; */
+  /* padding: 10px; */
 }
 .card-body {
   background-color: transparent !important;
   color: white;
 }
 .cards::-webkit-scrollbar {
+}
+
+@media screen and (max-width: 1200px) {
+  .cards {
+    grid-gap: 30px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .cards {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+@media screen and (max-width: 700px) {
+  .cards {
+    grid-template-columns: auto;
+  }
 }
 @media screen and (max-width: 500px) {
   .sign {
@@ -398,6 +427,16 @@ card design
   .sign {
     font-size: 4rem;
   }
+  .cardx {
+    width: 16rem;
+  }
+  /* .card-img-top {
+    height: 150px;
+    width: auto;
+  } */
+  /* .cards {
+    grid-template-columns: repeat(1, auto);
+  } */
 }
 @media screen and (max-width: 290px) {
   .sign {
