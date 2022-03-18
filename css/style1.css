@@ -41,7 +41,7 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 1.3em;
+  padding: 20px;
 }
 .container ul li {
   list-style: none;
@@ -155,4 +155,26 @@ a span:hover {
 }
 .img-box {
   max-width: 400px;
+}
+@media (max-width: 1200px) {
+  .container {
+    position: relative;
+    width: calc(100%-20px);
+  }
+}
+@media (max-width: 992px) {
+  section {
+    padding: 50px 10px 10px;
+  }
+  .container {
+    transform: translateX(0px);
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    justify-content: center;
+  }
+  .container .contain {
+    transform: translateX(0px);
+    width: 100%;
+  }
 }
