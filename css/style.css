@@ -21,10 +21,10 @@ body {
   margin: auto;
 }
 .banner h1 {
-  font-size: 60px;
+  font-size: 2rem;
   font-weight: 400;
   font-family: blanka;
-  word-spacing: -20px;
+  word-spacing: 0.01em;
   /* letter-spacing: 2px; */
 }
 .banner ul {
@@ -64,13 +64,13 @@ body {
   width: ;
 } */
 .earth-img img {
-  width: 40%;
+  width: 30%;
   height: auto;
   margin-top: 140px;
 }
 .circle {
   width: 44rem;
-  height:44rem;
+  height: 44rem;
   display: inline-block;
   border-radius: 100%;
   border: 1px solid #fff;
@@ -84,6 +84,21 @@ body {
 @keyframes circle {
   to {
     transform: rotate(360deg);
+  }
+}
+@media (max-width: 500px) {
+  #circle {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    border-radius: 100%;
+    border: 1px solid #fff;
+    position: relative;
+    top: 20rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    animation: circle 60s linear 0s infinite;
   }
 }
 .icon {
