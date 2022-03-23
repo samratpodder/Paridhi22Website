@@ -542,3 +542,44 @@ card design
 
 	animation: neonAnimation var(--animation-speed) infinite linear;
 }
+
+/* //// */
+.blink_text {
+	animation-name: blinker;
+	animation-duration: 2s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+@keyframes blinker {
+	0% {
+		color: rgb(141, 213, 255);
+	}
+	25% {
+		color: rgb(141, 213, 255);
+	}
+	30% {
+		color: rgb(255, 255, 255);
+	}
+	40% {
+		color: rgb(141, 213, 255);
+	}
+	45% {
+		color: rgb(141, 213, 255);
+	}
+	50% {
+		color: #11162000;
+	}
+	75% {
+		color: rgb(167, 216, 245);
+	}
+	80% {
+		color: rgb(255, 255, 255);
+	}
+	90% {
+		color: rgb(76, 180, 240);
+	}
+	100% {
+		color: rgb(167, 216, 245);
+	}
+}

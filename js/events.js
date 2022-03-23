@@ -26,7 +26,7 @@ for (const i of content) {
 
 	<span class="border">
 	<span class="gradient"></span>
-	<span class="container">${i.title}</span>
+	<span class="container blink_text">${i.title}</span>
   </span>
         <p class="card-text">
             ${i.description}
