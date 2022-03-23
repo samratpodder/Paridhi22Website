@@ -9,7 +9,6 @@ var content = [
 	{ id: 2, title: "Code Rush", description: "Code Rush is a CP contest" },
 	{ id: 2, title: "Code Rush", description: "Code Rush is a CP contest" },
 	{ id: 2, title: "Code Rush", description: "Code Rush is a CP contest" },
-
 ];
 
 for (const i of content) {
@@ -48,14 +47,14 @@ var typed = new Typed(".typedd", {
 
 var cardsContainer = $(".cards-container");
 console.log(cardsContainer);
-var height  = cards.height();
-cardsContainer.height(height+100);
+var height = cards.height();
+cardsContainer.height(height + 100);
 console.log(cardsContainer.height());
-window.onresize = ()=>{
-	var height  = cards.height();
-	cardsContainer.height(height+100);
+window.onresize = () => {
+	var height = cards.height();
+	cardsContainer.height(height + 100);
 	console.log(cardsContainer.height());
-}
+};
 // if(window.innerWidth<1100){
 // 	cardsContainer.height(height+200);
 // }
