@@ -7,9 +7,17 @@
 	margin: 0;
 	box-sizing: border-box;
 }
+body::-webkit-scrollbar {
+	background: black;
+	width: 10px;
+}
+body::-webkit-scrollbar-thumb {
+	background-color: #adb5bd;
+	border-radius: 5px;
+}
 .header-div {
-	height: 400px;
-	background-image: url(../assets/images/header.webp);
+	height: 100vh;
+	background-image: url(../assets/images/bck1.jpg);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center;
@@ -17,15 +25,15 @@
 	/* background-color: #010713; */
 	width: 100%;
 	/* filter: blur(2px); */
-	filter: brightness(0.3);
+	filter: brightness(0.5);
 	position: absolute;
 }
 .header {
-	height: 400px;
+	height: 100vh;
 	width: 100%;
 }
 .header-main {
-	height: 400px;
+	height: 100vh;
 	width: 100%;
 	position: absolute;
 	z-index: 100;
