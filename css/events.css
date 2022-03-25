@@ -17,7 +17,7 @@ body::-webkit-scrollbar-thumb {
 }
 .header-div {
 	height: 100vh;
-	background-image: url(../assets/images/bck1.jpg);
+	background-image: url(../assets/images/pexels-pixabay-220201.jpg);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center;
@@ -78,7 +78,7 @@ h1 {
 	background-position: center;
 	background-attachment: fixed;
 	color: white;
-	filter: brightness(0.2);
+	filter: brightness(0.4);
 	position: absolute;
 }
 
@@ -327,7 +327,7 @@ card design
 .cardx {
 	/* color: black; */
 	background: transparent;
-	height: 300px;
+	height: 250px;
 	width: 18rem;
 	/* width: 200px; */
 	border: 2px inset white;
@@ -335,6 +335,19 @@ card design
 	box-shadow: 0 5px 10px 0 white;
 	animation: borderflicker 10s linear infinite;
 	/* filter: brightness(2); */
+}
+.logo {
+	border-radius: 50%;
+}
+.card-logo {
+	height: 70px;
+	width: 70px;
+	background: white;
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, 0);
+	border-radius: 50%;
 }
 .card-title-text {
 	/* padding: 5px; */

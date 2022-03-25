@@ -12,17 +12,21 @@ var content = [
 ];
 
 for (const i of content) {
-	var card = `<div class="cardx" data-aos-offset="200" data-aos-duration="800" data-aos="zoom-in" >
+	var card = `<div class="cardx" data-aos-offset="210" data-aos-duration="800" data-aos="zoom-in" >
 	<div data-aos="fade-up">
+	<div class="card-logo">
+	<img class = "logo" src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" style="width:100%">
+	</div>
     <img
         src="../assets/images/cardsbackground.jpg"
         class="card-img-top"
 		
         alt="..."
-        height="200px"
+        height="150px"
         width="auto"
-    /></div>
-    <div class="card-body" data-aos-duration="1000" data-aos-offset="80" data-aos="fade-down">
+    />
+	</div>
+    <div class="card-body" data-aos-duration="1000" data-aos-offset="60" data-aos="fade-down">
 
 	<span class="border">
 	<span class="gradient"></span>
