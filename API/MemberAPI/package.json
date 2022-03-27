@@ -1,0 +1,22 @@
+{
+  "name": "megaapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "expapi.js",
+  "dependencies": {
+    "csv-parser": "^3.0.0",
+    "express": "^4.17.2",
+    "fs": "0.0.1-security"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Hi\"",
+    "start": "node expapi.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "none"
+  },
+  "author": "samrat",
+  "license": "ISC"
+}

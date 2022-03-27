@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/348a44bc-bd82-4eb4-9ed7-094b01cb5bd8/resourceGroups/MegaWebsite/providers/Microsoft.Web/sites/TeamsPageAPI",
+    "appService.deploySubpath": "."
+}
