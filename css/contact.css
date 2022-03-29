@@ -548,8 +548,36 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 		padding-left: 0;
 	}
 	.fa-envelope, .fa-phone-alt, .fa-map-marker-alt{
-		padding-right: 3rem;
+		padding-right: 1.5rem;
 	}
+}
+@media(max-width:900px) {
+  #toplocicon{
+		padding-right: 0.5rem;
+	}
+  .mainaddresstext{
+    font-size: 0.95rem;
+  }
+  .addressholder {
+    margin-bottom: 3rem;
+}
+.visit{
+  left: 3rem;
+}
+ul{
+  transform: translate(-55%,-145%);
+}
+.rightcol{
+  margin-left: -4rem;
+}
+}
+@media(max-width:768px) {
+  .mainaddresstext{
+    font-size: 0.9rem;
+  }
+  .addressholder {
+    margin-bottom: 3rem;
+}
 }
 @media(max-width:512px){
 	.contact{
@@ -570,6 +598,84 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 		font-family: Gilroy-Light;
 		transition: all 1s ease-in-out;
 	}
+  .mainframe{
+    flex-direction: column;
+  }
+  .leftcol {
+    display: flex;
+    flex-direction: column;
+    max-width: 94%;
+    padding: 2rem 0rem;
+}
+.detailaddresstext {
+  font-size: 1.2rem;
+  color: var(--fg);
+  margin-bottom: 3rem;
+  max-width: 90%;
+  padding-left: 1.5rem;
+}
+.mainaddresstext{
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+.mapcontainer {
+  max-width: 100%;
+}
+.addressholder{
+  margin-bottom: 0rem;
+}
+.rightcol {
+  margin-left: 0rem;
+}
+.contacttext {
+  margin-top: 3rem;
+  font-size: 2rem;
+}
+.card .content-wrap {
+  font-family: Elianto;
+  padding: 10px;
+  padding-left: 2rem;
+  padding-top: 1.5rem;
+  display: table-cell;
+  vertical-align: middle;
+}
+.card .content-wrap .item-title {
+  display: inline-block;
+  font-size: 21px;
+  color: #ffffff;
+  margin-bottom: 3px;
+}
+.card .content-wrap .text {
+  color: #fff;
+  font-size: 18px;
+}
+ul {
+  transform: translate(-54%,-45%);
+}
+.visit{
+  top: 1rem;
+}
+}
+@media(max-width:475px){
+.mainaddresstext {
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+}
+.detailaddresstext{
+  font-size: 1rem;
+}
+ul {
+  transform: translate(-61%,-50%);
+}
+}
+@media(max-width:425px){
+  .visit{
+    font-size: 1.2rem;
+    left: 2rem;
+  }
+  ul {
+    transform: translate(-72%,-45%);
+}
 }
 @media(max-width:375px){
 	.contact{
@@ -582,6 +688,15 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 	.fhead{
 		margin-left: -1rem;
 	}
+  .mainaddresstext{
+    font-size: 0.7rem;
+  }
+  .visit{
+    left: 1rem;
+  }
+  ul {
+    transform: translate(-81%,-45%);
+}
 }
 @media(max-width:360px)
 {
