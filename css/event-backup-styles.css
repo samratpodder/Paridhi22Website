@@ -1,0 +1,128 @@
+@font-face {
+    font-family: blanka;
+    src: url("../assets/fonts/blanka-free-font-er/Blanka-Regular.otf");
+}
+@font-face {
+    font-family: elianto;
+    src: url("../assets/fonts/Elianto-typeface/Elianto-Regular.otf");
+}
+body {
+  margin: 0;
+  background: #111111;
+
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.event-name{
+    text-align: center;
+    position: relative;
+    top: -15px;
+}
+.event-name span{
+    font-size: 80px;
+    color: white;
+    font-family: blanka;
+}
+.container {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  padding: 0 45px;
+}
+.content-wrap {
+  margin: auto;
+  width: 50%;
+ 
+  height: fit-content;
+  box-shadow: 0 10px 25px rgb(131, 131, 131);
+  border-radius: 23px;
+  padding: 2rem 0;
+  background: rgba(143, 142, 142, 0.185);
+  box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.178);
+  backdrop-filter: blur(4.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.171);
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+.event-image {
+  width: 100% !important;
+  height: 100%;
+  max-width: 25rem;
+  max-height: 25rem;
+  margin: 0 auto !important;
+}
+.event-image-item {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.items {
+  text-align: center;
+  margin: 15px auto;
+  width: 100%;
+  max-width: 25rem;
+  color: white;
+  font-family: elianto;
+}
+.items a{
+    font-size: 40px!important;
+}
+.items>span{
+    font-size: 20px;
+}
+.main-bg{
+  height: 100%;
+  width: 100vw;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -3;
+}
+.video{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.button
+{
+  display: inline-flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.button-item{
+  background-color: white;
+  padding: 25px;
+  border-radius: 23px;
+  font-family: blanka;
+  font-size: 25px;
+  cursor: pointer;
+  text-align: center;
+}
+.button-item:hover{
+ background-color: rgba(255, 255, 255, 0.63);
+}
+@media (max-width: 700px) {
+  .container {
+    padding: 0 15px;
+    
+  }
+  .event-name span{
+      font-size: 50px;
+  }
+  .content-wrap{
+      width: 75%;
+      box-sizing: border-box;
+      padding: 25px 15px;
+  }
+}
