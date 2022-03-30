@@ -262,7 +262,11 @@ a {
   color: #fff;
   text-decoration: none;
 }
-
+.fa-envelope:before,.fa-linkedin:before,.fa-facebook:before,.fa-instagram:before {
+  position: relative;
+  margin-left: -0.5rem;
+  top: -0.5rem;
+}
 .social {
   position: fixed;
   top: 10em;
@@ -351,7 +355,17 @@ side socials end
 /* --------------
 Media Queries
 ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
-
+@media (min-width: 1800px){
+  .container{
+    justify-content: center;
+    align-items: center;
+  }
+  .content h1{
+    font-size: 7em;
+    padding-top: 16rem;
+    margin-left: -12.6rem;
+  }
+}
 @media (max-width: 1800px) {
   .container {
     position: relative;
