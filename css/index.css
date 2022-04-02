@@ -4,10 +4,17 @@
   padding: 0;
   box-sizing: border-box;
 }
+@font-face {
+  font-family: Batman;
+  src: url("../assets/fonts/batmanforever.ttf");
+}
 
 body {
   min-height: 300vh;
   background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+}
+.noscroll {
+  overflow: hidden;
 }
 
 header {
@@ -30,10 +37,10 @@ header h1 {
   letter-spacing: 1pt;
   font-size: 3em;
   color: #fff;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Clash Display', sans-serif;
 }
 header button {
-  font-family: "Font Awesome 5 Free";
+  font-family: Batman;
   font-weight: 900;
   position: absolute;
   bottom: 100px;
@@ -57,22 +64,24 @@ header button:focus {
   outline: 0;
 }
 header button:before, header button:after {
-  font-family: "Font Awesome 5 Free";
+  font-family: Batman;
   transition: all 0.8s cubic-bezier(0.645, 0.045, 0.355, 1);
-  top: 17px;
-  position: absolute;
+  top: 0px;
+  position: relative;
 }
-/* header button:before {
-  content: "";
+header button:before {
+  content: "Enter";
   opacity: 1;
-  left: 53px;
+  left: 6px;
 }
 header button:after {
-  content: "";
+  content: "\f0c9";
   opacity: 0;
   left: 0;
-} */
+  font-weight: 900;
+}
 header .triangle {
+  
   position: absolute;
   z-index: 1;
   top: 0;
@@ -110,7 +119,9 @@ header.open button:before {
 }
 header.open button:after {
   opacity: 1;
-  left: 18px;
+  left: -48px;
+  top: 1px;
+  font-family: 'FontAwesome';
 }
 header.open button.menu {
   width: 100%;
@@ -124,7 +135,7 @@ header.open button.menu:after {
 }
 
 content section {
-  height: 100vh;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -149,9 +160,12 @@ nav {
 }
 nav ul {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 nav ul li {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Clash Display", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   line-height: 2;
@@ -177,6 +191,18 @@ nav ul li:nth-child(2) {
 nav ul li:nth-child(3) {
   animation-delay: 1s;
 }
+nav ul li:nth-child(4) {
+  animation-delay: 1s;
+}
+nav ul li:nth-child(5) {
+  animation-delay: 1s;
+}
+nav ul li:nth-child(6) {
+  animation-delay: 1s;
+}
+nav ul li:nth-child(7) {
+  animation-delay: 1s;
+}
 nav #nav-close {
   position: fixed;
   top: 40px;
@@ -198,4 +224,40 @@ nav #nav-close {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* Home Page Landing */
+body{
+  overflow-x: hidden;
+}
+
+.star0 {
+  height: 1px;
+  width: 1px;
+  opacity: 1;
+  position: absolute;
+}
+
+.star1 {
+  height: 2px;
+  width: 2px;
+  border-radius: 50%;
+  opacity: 1;
+  position: absolute;
+}
+
+.star2 {
+  height: 3px;
+  width: 3px;
+  border-radius: 50%;
+  opacity: 1;
+  position: absolute;
+}
+
+.star3 {
+  height: 4px;
+  width: 4px;
+  border-radius: 50%;
+  opacity: 1;
+  position: absolute;
 }
