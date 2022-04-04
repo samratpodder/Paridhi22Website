@@ -4,9 +4,33 @@
     padding: 0;
     margin: 0;
 }
+@keyframes floatAnim {
+    0% {
+      transform: translateY(0rem);
+    }
+    50% {
+      transform: translateY(2rem);
+    }
+    100% {
+      transform: translateY(0rem);
+    }
+  }
+  #hero-img{
+      animation: floatAnim 5s infinite;
+  }
 body{
     background-color: #000;
     overflow-x: hidden;
+}
+.container{
+    max-width: 100%;
+    height: auto;
+    padding-left: 0;
+    padding-right: 0;
+}
+.navbar{
+    max-width: 80%;
+    margin: auto;
 }
 .navbrand-text{
     max-width: 60%;
@@ -41,7 +65,8 @@ body{
     font-weight: 500;
 }
 .paridhi-heading{
-    margin: 8rem 0 0 1.5rem;  
+    margin: 8rem auto 0 auto;
+    max-width: 75%;  
 }
 .paridhi-details{
    color:#fff;
@@ -86,7 +111,7 @@ body{
 .about-home{
      color: #fff;
     margin-top: 5rem;
-    padding: 1rem 10rem;
+    padding: 1rem 30rem;
 }
 .about-heading{
     font-family: "Product Sans", sans-serif;
@@ -134,6 +159,29 @@ body{
 
 .event-container{
     margin: 2rem auto;
+    display: grid;
+    grid-template-areas: "event1 event2 event3"
+                         "event4 event5 event6";
+    row-gap: 3rem;
+    column-gap: 15rem;
+}
+.event1{
+    grid-area: event1;
+}
+.event2{
+    grid-area: event2;
+}
+.event3{
+    grid-area: event3;
+}
+.event4{
+    grid-area: event4;
+}
+.event5{
+    grid-area: event5;
+}
+.event6{
+    grid-area: event6;
 }
 /* .event-card{
     border: none;
@@ -202,9 +250,16 @@ body{
 }
 .domain{
     font-family: 'Inter',sans-serif;
+    position: relative;
+    margin-top: -90%;
+    left: 70%;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 900;
     font-size: 1.5rem;
+    text-transform: uppercase;
+}
+.eventcard-img{
+    opacity: 0.7;
 }
 .prize-money{
     font-family: 'Inter',sans-serif;
@@ -221,28 +276,27 @@ body{
 }
 .sponsors{
     background: #fff;
-    width: 150%;
-    margin-left: -20rem;
+    width: 100%;
+    /* margin-left: -20rem; */
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 .logo-container{
     width: 75%;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-content: center;
     align-items: center;
     /* margin-top: 10rem; */
 }
 .head-sponsor{
-    text-align: center;
-    position: relative;
-    left: 42rem;
     font-family: 'Product Sans';
     font-style: normal;
     font-weight: 700;
-    margin-bottom: 10rem;
+    margin-bottom: 2rem;
     padding-top: 1rem;
     font-size: 27px;
 }
@@ -278,8 +332,8 @@ body{
 }
 .footer{
     background-color: #fff;
-    width: 150%;
-    margin-left: -20rem;
+    width: 100%;
+    /* margin-left: -20rem; */
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -323,8 +377,251 @@ body{
     color: rgb(11, 119, 202);
     text-decoration: underline;
 }
-#freepik_stories-nerd{
+#hero-img{
     width: 80%;
     margin-top: -7rem;
     margin-left: 5rem;
+}
+@media (min-width:1500px) {
+    .navbar-brand{
+        margin-right: 33rem;
+    }
+}
+@media(max-width:1500px)
+{
+    .about-home{
+        padding: 1rem 17rem;
+    }
+    .event-container{
+        column-gap: 5rem;
+    }
+    .navbar-brand{
+        margin-right: 20rem;
+    }
+}
+@media(max-width:1100px)
+{
+    .paridhi-name
+    {
+        font-size: 42px;
+    }
+    .paridhi-edition{
+        padding: 5px 5px;
+    }
+    .paridhi-desc{
+        width: 95%;
+    }
+    #hero-img {
+        margin-top: -4rem;
+    }
+    .about-home{
+        padding: 1rem 10rem;
+        max-width: 100%;
+    }
+    .event-container{
+        column-gap: 1rem;
+    }
+}
+@media(max-width:768px)
+{
+    .navbar-brand{
+        margin-right: 0rem;
+    }
+    .event-container{
+        grid-template-areas: "event1 event2"
+                            "event3 event4"
+                            "event5 event6";
+    }
+    .comp1>img{
+        max-width: 90%;
+        /* position: relative;
+        left: 12rem;
+        padding-right: 2%; */
+    }
+    .comp2>img{
+        max-width: 90%;
+        /* position: relative;
+        left: 15rem;
+        padding-right: 2%; */
+    }
+    .comp3>img{
+        max-width: 90%;
+        /* position: relative;
+        left: 15rem;
+        padding-right: 2%; */
+    }
+    .comp4>img{
+        max-width: 90%;
+        /* position: relative;
+        left: 15rem;
+        padding-right: 2%; */
+    }
+    .comp5>img{
+        max-width: 90%;
+        /* position: relative;
+        left: 15rem; */
+        /* padding-right: 2%; */
+    }
+    .logo-container{
+        max-width: 100%;
+    }
+    .logo-container>div{
+        padding-right: 20px;
+    }
+    .paridhi-name {
+        font-size: 34px;
+    }
+    .about-home {
+        padding: 1rem 7rem;
+    }
+    .navbar-brand {
+        max-width: 15%;
+    }
+}
+@media(max-width:512px)
+{
+
+    .navbar-brand{
+        max-width: 50%;
+    }
+    #navbarSupportedContent{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+    .navbarcontent > a {
+        color: #000;
+        font-size: 1.2rem;
+        border-radius: 12px;
+    }
+    .navbarcomp{
+        border-radius: 1rem;
+    }
+    .row{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
+    }
+    #hero-img {
+        position: relative;
+        margin-top: 0;
+        margin-left: 0;
+        width: 200%;
+        left: -5rem;
+    }
+    .paridhi-details{
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #specialcol6{
+        width: 100%;
+    }
+    .paridhi-name{
+        text-align: center;
+        font-size: 40px;
+        margin-top: 3rem;
+    }
+    .paridhi-edition{
+        text-align: center;
+    }
+    .paridhi-desc{
+        text-align: center;
+        margin: 0;
+        width: 100%;
+        margin-top: 4rem;
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    .explore-btn{
+        position: relative;
+        left: 5rem;
+        margin-top: 5rem;
+        font-size: 21px;
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+    .about-home {
+        flex-direction: column;
+        margin-top: 7rem;
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: 75%;
+        margin-bottom: 9rem;
+    }
+    .about-para{
+        margin-top: 3rem;
+    }
+    .event-container{
+        display: grid;
+        grid-template-areas: "event1"
+                            "event2"
+                            "event3"
+                            "event4"
+                            "event5"
+                            "event6";
+    }
+    .logo-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .comp1{
+        max-width: 100%;
+        margin-bottom: 3rem;
+    }
+    .comp2{
+        max-width: 100%;
+        margin-bottom: 3rem;
+    }
+    .comp3{
+        max-width: 100%;
+        margin-bottom: 3rem;
+    }
+    .comp4{
+        max-width: 100%;
+        margin-bottom: 3rem;
+    }
+    .comp5
+    {
+        max-width: 100%;
+        margin-bottom: 3rem;
+    }
+    .footer{
+        flex-direction: column;
+    }
+    .branding{
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+    }
+}
+@media(max-width:450px)
+{
+    .explore-btn{
+        left:3rem
+    }
+}
+@media(max-width:400px)
+{
+    .paridhi-name{
+        font-size: 2rem;
+        margin-top: 1rem;
+    }
+    .paridhi-desc{
+        font-size: 1.2rem;
+        margin-top: 0.5rem;
+    }
+    .explore-btn{
+        left: 2rem;
+        margin-top: 1.2rem;
+    }
+    .about-para {
+        margin-top: 1.5rem;
+    }
 }
