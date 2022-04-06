@@ -1,4 +1,15 @@
+// monitorEvents(document.body);
+//function to scroll down on load
+function scrollDown(pos){
+  window.scroll(0,pos);
+}
+//call scrollDown when the page is loaded with value of 250
+// $(document).ready(function(){
+//   scrollDown(250);
+// });
+
 // function to open/close nav
+
 function toggleNav(){
     // if nav is open, close it
     if($("nav").is(":visible")){
@@ -23,6 +34,16 @@ function toggleNav(){
     // when clicking + button, open header
     else{
       $("header").addClass("open");
+      setTimeout(function(){
+        [...document.getElementsByClassName("el")].forEach(element => {
+          // console.log(element);
+          element.classList.toggle("d-none");
+          element.style.display = "block";
+        });
+      }, 2000);
+      
+      window.scroll(0,0);
+      
     }
   });
   
@@ -104,6 +125,7 @@ function toggleNav(){
     var speed = 5000 * (Math.random() * maxTime + 1);
     star.setAttribute("class", "star" + (3 - Math.floor(speed / 1000 / 8)));
     star.style.backgroundColor = "white";
+    star.style.zIndex = "50";
   
     universe.appendChild(star);
     star.animate(
@@ -127,16 +149,44 @@ function toggleNav(){
     );
   }
   
-  var elem = document.querySelector(".pulse");
-  var animation = elem.animate(
-    {
-      opacity: [0.5, 1],
-      transform: ["scale(0.5)", "scale(1)"]
-    },
-    {
-      direction: "alternate",
-      duration: 500,
-      iterations: Infinity
-    }
-  );
+  // var elem = document.querySelector(".pulse");
+  // var animation = elem.animate(
+  //   {
+  //     opacity: [0.5, 1],
+  //     transform: ["scale(0.5)", "scale(1)"]
+  //   },
+  //   {
+  //     direction: "alternate",
+  //     duration: 500,
+  //     iterations: Infinity
+  //   }
+  // );
   
+
+
+
+
+var $cont = document.querySelector('.cont');
+var $elsArr = [].slice.call(document.querySelectorAll('.el'));
+var $closeBtnsArr = [].slice.call(document.querySelectorAll('.el__close-btn'));
+
+setTimeout(function() {
+  $cont.classList.remove('s--inactive');
+  console.log("s--inactive removed");
+}, 500);
+
+$elsArr.forEach(function($el) {
+  $el.addEventListener('click', function() {
+    if (this.classList.contains('s--active')) return;
+    $cont.classList.add('s--el-active');
+    this.classList.add('s--active');
+  });
+});
+
+$closeBtnsArr.forEach(function($btn) {
+  $btn.addEventListener('click', function(e) {
+    e.stopPropagation();
+    $cont.classList.remove('s--el-active');
+    document.querySelector('.el.s--active').classList.remove('s--active');
+  });
+});
