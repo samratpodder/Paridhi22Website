@@ -13,11 +13,25 @@ function scrollDown(pos){
 function toggleNav(){
     // if nav is open, close it
     if($("nav").is(":visible")){
+      console.log("Closed Navbar");
+      setTimeout(function(){
+        [...document.getElementsByClassName("el")].forEach(element => {
+          // console.log(element);
+          element.classList.toggle("d-none");
+          element.style.display = "block";
+        });
+      },2000);
+      
       $("nav").fadeOut();
       $("button").removeClass("menu");
     }
     // if nav is closed, open it
     else{
+      [...document.getElementsByClassName("el")].forEach(element => {
+        // console.log(element);
+        // element.classList.toggle("d-none");
+        element.style.display = "none";
+      });
       $("button").addClass("menu");
       $("nav").fadeIn().css('display', 'flex');
     }
