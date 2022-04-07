@@ -1,0 +1,830 @@
+@import url('http://fonts.cdnfonts.com/css/product-sans'); 
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+@import url('http://fonts.cdnfonts.com/css/nexa-bold');
+@import url('http://fonts.cdnfonts.com/css/noise-machine');
+@font-face{
+    font-family: 'Batman';
+    src: url("../assets/fonts/batmanforever.ttf");
+}
+@keyframes floatAnim {
+    0% {
+      transform: translateY(0rem);
+    }
+    50% {
+      transform: translateY(2rem);
+    }
+    100% {
+      transform: translateY(0rem);
+    }
+  }
+  #hero-img{
+      animation: floatAnim 5s infinite;
+  }
+body{
+    background-color: #000;
+    overflow-x: hidden;
+}
+.paridhi-name{
+    font-family: Batman;
+}
+.container{
+    max-width: 100%;
+    height: auto;
+    padding-left: 0;
+    padding-right: 0;
+}
+.navbar{
+    max-width: 80%;
+    margin: auto;
+}
+.navbrand-text{
+    max-width: 60%;
+    height: auto;
+}
+.navbarcomp{
+    margin-top: 1rem;
+    border-radius: 50px;
+    padding: 5px 10px 5px 15px;
+    color: #000;
+}
+.navbar-brand{
+    max-width: 20%;
+}
+.navbarcontent{
+    display: flex;
+    font-size: 12px;
+}
+
+.navbarcontent > a{
+    color:#000;
+}
+
+.activebtn{
+    background-color: #1D2226;
+    border-radius: 25px;
+    color: #fff !important;
+}
+.navhome{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+}
+.paridhi-heading{
+    margin: 8rem auto 0 auto;
+    max-width: 75%;  
+}
+.paridhi-details{
+   color:#fff;
+}
+.paridhi-name{
+    font-family: 'Red Hat Text';
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 30px;
+}
+.paridhi-name h1 {
+    letter-spacing: 10px;
+    color: #ffffff;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px blue, 0 0 30px blue, 0 0 40px blue, 0 0 55px blue, 0 0 75px blue;
+    text-align: center;
+    animation: text-flicker 1s linear infinite;
+  }
+  
+  @keyframes text-flicker {
+    0% {
+      opacity: 0.1;
+    }
+    
+    1% {
+      opacity: 0.9;
+    }
+    
+    5% {
+      opacity: 1;
+    }
+    
+    7% {
+      opacity: 0.5;
+    }
+    
+    15% {
+      opacity: 1;
+    }
+    
+    16% {
+      opacity: 0.3;
+    }
+    
+    20% {
+      opacity: 0.9;
+    }
+    
+    22% {
+      opacity: 0.7;
+    }
+    
+    30% {
+      opacity: 1;
+    }
+    
+    35% {
+      opacity: 1;
+    }
+    
+    50% {
+      opacity: 0.4;
+    }
+    
+    60% {
+      opacity: 1;
+    }
+    
+    64% {
+      opacity: 1;
+    }
+    
+    70% {
+      opacity: 0.2;
+    }
+    
+    85% {
+      opacity: 0.1;
+    }
+    
+    100% {
+      opacity: 1;
+    }
+  }
+  
+
+.paridhi-edition{
+   line-height: 25px;
+   font-weight: 400;
+   letter-spacing: 0.55em;
+   padding: 5px 15px;
+}
+.paridhi-desc{
+   margin-top: 1rem;
+   line-height: 18px;
+   font-size: 1.5rem;
+   text-align:left;
+   animation: text-flicker 1s linear infinite;
+}
+
+
+.about-home{
+     color: #fff;
+    margin-top: 5rem;
+    padding: 1rem 30rem;
+}
+.about-heading{
+    font-family: "Product Sans", sans-serif;
+    font-weight: 700;
+    text-align: center;
+    font-size: 25px;
+    line-height: 28px;
+    margin-bottom: 20px;
+    letter-spacing: 0.3rem;
+}
+.about-para{
+   text-align: center;
+   font-size: 14px;
+   letter-spacing: 1.2px;
+}
+
+.carousel-container{
+    width: 95%;
+    margin: 4rem auto;
+}
+.carousel-innercontainer{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.carousel-img{
+    height: 250px;
+    border-radius: 15px;
+}
+#carousel-btn{
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    border: none;
+    margin-left: 10px;
+}
+
+.event-heading{
+    font-size: 25px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.event-container{
+    margin: 2rem auto;
+    display: grid;
+    grid-template-areas: "event1 event2 event3"
+                         "event4 event5 event6";
+    row-gap: 3rem;
+    column-gap: 15rem;
+}
+.event1{
+    grid-area: event1;
+}
+.event2{
+    grid-area: event2;
+}
+.event3{
+    grid-area: event3;
+}
+.event4{
+    grid-area: event4;
+}
+.event5{
+    grid-area: event5;
+}
+.event6{
+    grid-area: event6;
+}
+.event-card{
+   height: 80%;
+   width: 80%;
+}
+.eventcard-img{
+    border-radius:20px 20px 0 0;
+}
+
+.event-cardbody{
+    position: absolute;
+    bottom: 30px;
+    padding: 0 10px 5px 10px ;
+    color: #fff;
+    font-size: 12px;
+    margin-left: 0.5rem;
+}
+.event-explorebtn{
+    border:none;
+    border-radius: 0 0 8px 8px;
+    color: #fff;
+    background-color: #1D2226;
+    padding: 8px;
+    font-size: 12px;
+}
+
+.event-btn{
+    text-align: center;
+}
+
+.event-viewbtn{
+   font-size: 12px;
+   width:100px;
+   border-radius: 25px;
+   padding: 5px;
+}
+.card{
+    background-color: #000;
+    border: none;
+}
+.card-top{
+    border: 1px solid #fff;
+    border-radius:20px;
+    padding: 0;
+    height: 90%;
+}
+
+.card-top > img {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+.card-text:last-child{
+    margin-bottom:1rem;
+}
+.card-text{
+    position: relative;
+    top: -2%;
+    font-family: 'Inter',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: capitalize;
+    font-size: 10px;
+    line-height: 0.8rem;
+}
+.event-explorebtn{
+    margin-top: 0.3rem;
+    max-width: 98%;
+    position: relative;
+    left: 1%;
+}
+.domain{
+    font-family: 'Inter',sans-serif;
+    position: relative;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+.eventcard-img{
+    opacity: 0.7;
+}
+.prize-money{
+    font-family: 'Inter',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+.space{
+    width: 100%;
+    height: 2rem;
+}
+.event-btn{
+    margin-bottom: 5rem;
+}
+.sponsors{
+    background: #fff;
+    width: 100%;
+    /* margin-left: -20rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logo-container{
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    /* margin-top: 10rem; */
+}
+.head-sponsor{
+    font-family: 'Product Sans';
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    padding-top: 1rem;
+    font-size: 27px;
+}
+.comp1>img{
+    max-width: 70%;
+    /* position: relative;
+    left: 12rem;
+    padding-right: 2%; */
+}
+.comp2>img{
+    max-width: 70%;
+    /* position: relative;
+    left: 15rem;
+    padding-right: 2%; */
+}
+.comp3>img{
+    max-width: 70%;
+    /* position: relative;
+    left: 15rem;
+    padding-right: 2%; */
+}
+.comp4>img{
+    max-width: 70%;
+    /* position: relative;
+    left: 15rem;
+    padding-right: 2%; */
+}
+.comp5>img{
+    max-width: 70%;
+    /* position: relative;
+    left: 15rem;
+    padding-right: 2%; */
+}
+.footer{
+    background-color: #fff;
+    width: 100%;
+    /* margin-left: -20rem; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+}
+.toptext{
+    font-size: 3rem;
+    font-family: 'Red Hat Text',sans-serif;
+    font-weight: 900;
+}
+.follow>span{
+    font-size: 1.2rem;
+    font-family: 'Product Sans',sans-serif;
+    font-weight: 700;
+    margin-right: 2rem;
+}
+.fa-brands{
+    color: #000;
+    font-size: 1.1rem;
+    padding-right: 1rem;
+}
+.contacthead{
+    font-family: 'Product Sans',sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.person{
+    line-height: 2rem;
+    font-weight: 400;
+}
+.person>a{
+    text-decoration: none;
+    color: #000;
+    transition: all 0.5s ease-in-out;
+}
+.person>a:hover{
+    color: rgb(11, 119, 202);
+    text-decoration: underline;
+}
+#hero-img{
+    width: 80%;
+    margin-top: -7rem;
+    margin-left: 5rem;
+}
+.paridhi-name{
+    font-family: Batman;
+}
+.about-heading{
+    font-family: Batman;
+}
+.event-heading{
+    font-family: Batman;
+    letter-spacing: 0.3rem;
+}
+.event-viewbtn{
+    font-size: 18px;
+    width: 21rem;
+}
+.domain{
+    font-family: 'Nexa', sans-serif;
+    /* letter-spacing: 0.1rem;
+     */
+     font-weight: 600;
+}
+@media (min-width:1500px) {
+    .navbar-brand{
+        margin-right: 40rem;
+    }
+}
+@media(max-width:1500px)
+{
+    .about-home{
+        padding: 1rem 17rem;
+    }
+    .event-container{
+        column-gap: 5rem;
+    }
+    .navbar-brand{
+        margin-right: 27rem;
+    }
+}
+@media(max-width:1100px)
+{
+    .navbar-brand{
+        margin-right: 15rem;
+    }
+    .paridhi-name
+    {
+        font-size: 42px;
+    }
+    .paridhi-edition{
+        padding: 5px 5px;
+    }
+    #hero-img {
+        margin-top: -4rem;
+    }
+    .about-home{
+        padding: 1rem 10rem;
+        max-width: 100%;
+    }
+    .event-container{
+        column-gap: 1rem;
+    }
+}
+@media(max-width:768px)
+{
+    .navbar-brand{
+        margin-right: 0rem;
+    }
+    .event-container{
+        grid-template-areas: "event1 event2"
+                            "event3 event4"
+                            "event5 event6";
+    }
+    .comp1>img{
+        max-width: 90%;
+        /* position: relative;
+        left: 12rem;
+        padding-right: 2%; */
+    }
+    .comp2>img{
+        max-width: 90%;
+        /* position: relative;
+        left: 15rem;
+        padding-right: 2%; */
+    }
+    .comp3>img{
+        max-width: 90%;
+        /* position: relative;
+        left: 15rem;
+        padding-right: 2%; */
+    }
+    .comp4>img{
+        max-width: 90%;
+        /* position: relative;
+        left: 15rem;
+        padding-right: 2%; */
+    }
+    .comp5>img{
+        max-width: 90%;
+        /* position: relative;
+        left: 15rem; */
+        /* padding-right: 2%; */
+    }
+    .logo-container{
+        max-width: 100%;
+    }
+    .logo-container>div{
+        padding-right: 20px;
+    }
+    .paridhi-name {
+        font-size: 34px;
+    }
+    .about-home {
+        padding: 1rem 7rem;
+    }
+    .navbar-brand {
+        max-width: 15%;
+    }
+}
+@media(max-width:512px)
+{
+
+    .navbar-brand{
+        max-width: 50%;
+    }
+    #navbarSupportedContent{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+    .navbarcontent > a {
+        color: #000;
+        font-size: 1.2rem;
+        border-radius: 12px;
+    }
+    .navbarcomp{
+        border-radius: 1rem;
+    }
+    .row{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
+    }
+    #hero-img {
+        position: relative;
+        margin-top: 0;
+        margin-left: 0;
+        width: 200%;
+        left: -5rem;
+    }
+    .paridhi-details{
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #specialcol6{
+        width: 100%;
+    }
+    .paridhi-name{
+        text-align: center;
+        font-size: 40px;
+        margin-top: 3rem;
+    }
+    .paridhi-edition{
+        text-align: center;
+    }
+    .paridhi-desc{
+        text-align: center;
+        margin: 0;
+        width: 100%;
+        margin-top: 4rem;
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    .explore-btn{
+        position: relative;
+        left: 5rem;
+        margin-top: 5rem;
+        font-size: 21px;
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+    .about-home {
+        flex-direction: column;
+        margin-top: 7rem;
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: 75%;
+        margin-bottom: 9rem;
+    }
+    .about-para{
+        margin-top: 3rem;
+    }
+    .event-container{
+        display: grid;
+        grid-template-areas: "event1"
+                            "event2"
+                            "event3"
+                            "event4"
+                            "event5"
+                            "event6";
+    }
+    .logo-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .comp1{
+        max-width: 100%;
+        margin-bottom: 3rem;
+    }
+    .comp2{
+        max-width: 100%;
+        margin-bottom: 3rem;
+    }
+    .comp3{
+        max-width: 100%;
+        margin-bottom: 3rem;
+    }
+    .comp4{
+        max-width: 100%;
+        margin-bottom: 3rem;
+    }
+    .comp5
+    {
+        max-width: 100%;
+        margin-bottom: 3rem;
+    }
+    .footer{
+        flex-direction: column;
+    }
+    .branding{
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+    }
+}
+@media(max-width:450px)
+{
+    .explore-btn{
+        left:3rem
+    }
+}
+@media(max-width:400px)
+{
+    .paridhi-name{
+        font-size: 2rem;
+        margin-top: 1rem;
+    }
+    .paridhi-desc{
+        font-size: 1.2rem;
+        margin-top: 0.5rem;
+    }
+    .explore-btn{
+        left: 2rem;
+        margin-top: 1.2rem;
+    }
+    .about-para {
+        margin-top: 1.5rem;
+    }
+}
+.preloader{
+    height: 100%;
+    width: 100%;
+}
+.pulse {
+    height: 100px;
+    width: 200px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  .pulse:after {
+    content: '';
+    display: block;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 200px 100px" enable-background="new 0 0 200px 100px" xml:space="preserve"><polyline fill="none" stroke-width="3px" stroke="white" points="2.4,58.7 70.8,58.7 76.1,46.2 81.1,58.7 89.9,58.7 93.8,66.5 102.8,22.7 110.6,78.7 115.3,58.7 126.4,58.7 134.4,54.7 142.4,58.7 197.8,58.7 "/></svg>') 0 0 no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    -webkit-animation: 2s pulse linear infinite;
+    -moz-animation: 2s pulse linear infinite;
+    -o-animation: 2s pulse linear infinite;
+    animation: 2s pulse linear infinite;
+      clip: rect(0, 0, 100px, 0);
+  }
+  .pulse:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: 2px;
+    right: 2px;
+    bottom: 0;
+    top: 16px;
+    margin: auto;
+    height: 3px;
+  
+  }
+  
+  
+  @-webkit-keyframes pulse {
+    0% {
+      clip: rect(0, 0, 100px, 0);
+      opacity: 0.4;
+    }
+    4% {
+      clip: rect(0, 66.66667px, 100px, 0);
+      opacity: 0.6;
+    }
+    15% {
+      clip: rect(0, 133.33333px, 100px, 0);
+      opacity: 0.8;
+    }
+    20% {
+      clip: rect(0, 300px, 100px, 0);
+       opacity: 1;
+    }
+  
+    80% {
+      clip: rect(0, 300px, 100px, 0);
+       opacity:0;
+    }
+  
+    90% {
+      clip: rect(0, 300px, 100px, 0);
+      opacity: 0;
+    }
+  
+    100% {
+      clip: rect(0, 300px, 100px, 0);
+      opacity:0;
+   }
+  }
+  @keyframes pulse {
+    0% {
+      clip: rect(0, 0, 100px, 0);
+    }
+    4% {
+      clip: rect(0, 66.66667px, 100px, 0);
+    }
+    15% {
+      clip: rect(0, 133.33333px, 100px, 0);
+    }
+    20% {
+      clip: rect(0, 300px, 100px, 0);
+       opacity:1;
+    }
+  
+    80% {
+      clip: rect(0, 300px, 100px, 0);
+       opacity:0;
+    }
+  
+    90% {
+      opacity: 0;
+    }
+  
+    100% {
+      clip: rect(0, 300px, 100px, 0);
+      opacity:0;
+   }
+    
+  }
+.wrapper{
+    background: black;
+}
+header{
+    background:black;
+}

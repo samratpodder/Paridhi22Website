@@ -48,6 +48,7 @@ function toggleNav(){
     // when clicking + button, open header
     else{
       $("header").addClass("open");
+      document.getElementsByClassName("home-container")[0].classList.toggle("d-none");
       setTimeout(function(){
         [...document.getElementsByClassName("el")].forEach(element => {
           // console.log(element);
