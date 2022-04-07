@@ -20,7 +20,7 @@ function toggleNav(){
           element.classList.toggle("d-none");
           element.style.display = "block";
         });
-      },2000);
+      },1000);
       
       $("nav").fadeOut();
       $("button").removeClass("menu");
@@ -29,7 +29,7 @@ function toggleNav(){
     else{
       [...document.getElementsByClassName("el")].forEach(element => {
         // console.log(element);
-        // element.classList.toggle("d-none");
+        element.classList.toggle("d-none");
         element.style.display = "none";
       });
       $("button").addClass("menu");
@@ -48,6 +48,8 @@ function toggleNav(){
     // when clicking + button, open header
     else{
       $("header").addClass("open");
+      document.getElementsByClassName("open")[0].style.zIndex = "-98";
+      // document.getElementsByClassName("enterbtn")[0].style.zIndex = "98";
       document.getElementsByClassName("home-container")[0].classList.toggle("d-none");
       setTimeout(function(){
         [...document.getElementsByClassName("el")].forEach(element => {

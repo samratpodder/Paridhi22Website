@@ -28,6 +28,10 @@ body{
     background-color: #000;
     overflow-x: hidden;
 }
+#pagewrapper{
+    position: relative;
+    left: 2%;
+}
 .paridhi-name{
     font-family: Batman;
 }
@@ -75,7 +79,7 @@ body{
 }
 .paridhi-heading{
     margin: 8rem auto 0 auto;
-    max-width: 75%;  
+    max-width: 100%;  
 }
 .paridhi-details{
    color:#fff;
@@ -286,9 +290,10 @@ body{
    width:100px;
    border-radius: 25px;
    padding: 5px;
+   z-index: 100;
 }
 .card{
-    background-color: #000;
+    background-color: #191919;
     border: none;
 }
 .card-top{
@@ -490,6 +495,9 @@ body{
     .navbar-brand{
         margin-right: 27rem;
     }
+    #pagewrapper{
+        left: 3%;
+    }
 }
 @media(max-width:1100px)
 {
@@ -507,11 +515,18 @@ body{
         margin-top: -4rem;
     }
     .about-home{
-        padding: 1rem 10rem;
+        padding: 1rem 1rem;
         max-width: 100%;
     }
     .event-container{
         column-gap: 1rem;
+    }
+    #pagewrapper{
+        position: relative;
+        left: 30%;
+    }
+    .cont{
+        max-width: 100%;
     }
 }
 @media(max-width:768px)
@@ -564,10 +579,28 @@ body{
         font-size: 34px;
     }
     .about-home {
-        padding: 1rem 7rem;
+        padding: 1rem 4rem;
     }
     .navbar-brand {
         max-width: 15%;
+    }
+    #pagewrapper{
+        position: relative;
+        left: 5%;
+    }
+    .paridhi-desc{
+        line-height: 35px;
+    }
+    .cont{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .event-card{
+        height: 100%;
+        width: 100%;
+    }
+    .domain{
+        font-size: 1.1rem;
     }
 }
 @media(max-width:512px)
@@ -644,11 +677,12 @@ body{
         padding: 0;
         margin-left: auto;
         margin-right: auto;
-        width: 75%;
+        width: 100%;
         margin-bottom: 9rem;
     }
     .about-para{
         margin-top: 3rem;
+        font-size: 21px;
     }
     .event-container{
         display: grid;
@@ -698,6 +732,77 @@ body{
     .explore-btn{
         left:3rem
     }
+    body{
+        overflow-x: hidden;
+    }
+    .date{
+        display: none;
+    }
+    .title{
+        left:0;
+    }
+    #pagewrapper{
+        position: relative;
+        left: 10rem;
+    }
+    .cont__inner{
+        display: grid;
+        grid-template-areas: "pic1 pic2 "
+                            "pic3 pic4"
+                            "pic5 pic5";
+    }
+    .el__heading{
+        font-size: 0.2rem;
+    }
+    .el__text{
+        font-size: 0.8rem;
+    }
+    .el__content{
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+    .el__close-btn{
+        width: 20px;
+        height: 20px;
+        top: 10px;
+        right: 15px;
+    }
+    #pic1{
+        grid-area: pic1;
+        position: relative;
+        /* width: 48%;
+        height: auto; */
+        left: 0rem;
+    }
+    #pic2{
+        grid-area: pic2;
+        position: relative;
+        /* width: 48%;
+        height: auto; */
+        left: -10rem;
+    }
+    #pic3{
+        grid-area: pic3;
+        position: relative;
+        left: -2rem;
+    }
+    #pic4{
+        grid-area: pic4;
+        position: relative;
+        left: -12rem;
+    }
+    #pic5{
+        grid-area: pic5;
+        position: relative;
+        left: -8rem;
+    }
+    /* .el{
+        position: relative;
+        width: 48%;
+        height: auto;
+        top: 0;
+        left: 0;
+    } */
 }
 @media(max-width:400px)
 {
@@ -822,9 +927,21 @@ body{
    }
     
   }
-.wrapper{
+/* .wrapper{
     background: black;
 }
 header{
     background:black;
+} */
+body{
+    background: #191919;
+}
+.toptext{
+    color: black;
+}
+.follow{
+    color: black;
+}
+.contacts{
+    color: black;
 }

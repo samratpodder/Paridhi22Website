@@ -274,10 +274,12 @@ body{
   position: relative;
   overflow: hidden;
   height: 100vh;
-  max-width: 80%;
+  max-width: 90%;
   margin: auto;
   padding: 80px 70px;
   z-index: 99;
+  margin-top: 10rem;
+  margin-bottom: 15rem;
 }
 .cont__inner {
   position: relative;
@@ -305,6 +307,7 @@ body{
   overflow: hidden;
   position: relative;
   height: 100%;
+  width: 100%;
 }
 .el__inner {
   overflow: hidden;
@@ -327,7 +330,7 @@ body{
   position: absolute;
   left: 0;
   top: 0;
-  width: 85%;
+  width: 95%;
   height: 100%;
   background-size: cover;
   background-position: center center;
@@ -624,4 +627,8 @@ body{
 .el.s--active .el__bg:before {
   transition-delay: 0.6s;
   transform: scale(1.1);
+}
+#pagewrapper{
+  max-width: 100%;
+  margin: auto;
 }
