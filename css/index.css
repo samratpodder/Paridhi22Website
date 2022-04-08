@@ -154,6 +154,8 @@ content section {
   font-size: 1em;
   letter-spacing: 2pt;
   color: #fff;
+  position: relative;
+  left:-9.5rem
 }
 
 nav {

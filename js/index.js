@@ -49,7 +49,14 @@ function toggleNav(){
     else{
       $("header").addClass("open");
       document.getElementsByClassName("open")[0].style.zIndex = "-98";
-      // document.getElementsByClassName("enterbtn")[0].style.zIndex = "98";
+      // document.getElementsByClassName("enterbtn")[0].style.display = "none";
+      // setTimeout(
+      //   function(){
+      //     document.getElementsByClassName("enterbtn")[0].style.display = "none";
+      //   }
+      //   ,2000
+      // );
+      document.getElementById("enterbtn").style.opacity= "0";
       document.getElementsByClassName("home-container")[0].classList.toggle("d-none");
       setTimeout(function(){
         [...document.getElementsByClassName("el")].forEach(element => {
@@ -125,46 +132,46 @@ function toggleNav(){
   // VANTA.TRUNK(animationTrunk);
 
   //LANDING PAGE ANIMATION
-  var layerCount = 5;
-  var starCount = 400;
-  var maxTime = 30;
-  var universe = document.getElementById("universe");
-  var w = window;
-  var d = document;
-  var e = d.documentElement;
-  var g = d.getElementsByTagName("body")[0];
-  var width = w.innerWidth;
-  var height = w.innerHeight;
-  // console.log(width+"x"+height);
-  for (var i = 0; i < starCount; ++i) {
-    var ypos = Math.round(Math.random() * height);
-    var star = document.createElement("div");
-    var speed = 5000 * (Math.random() * maxTime + 1);
-    star.setAttribute("class", "star" + (3 - Math.floor(speed / 1000 / 8)));
-    star.style.backgroundColor = "white";
-    star.style.zIndex = "50";
+  // var layerCount = 5;
+  // var starCount = 400;
+  // var maxTime = 30;
+  // var universe = document.getElementById("universe");
+  // var w = window;
+  // var d = document;
+  // var e = d.documentElement;
+  // var g = d.getElementsByTagName("body")[0];
+  // var width = w.innerWidth;
+  // var height = w.innerHeight;
+  // // console.log(width+"x"+height);
+  // for (var i = 0; i < starCount; ++i) {
+  //   var ypos = Math.round(Math.random() * height);
+  //   var star = document.createElement("div");
+  //   var speed = 5000 * (Math.random() * maxTime + 1);
+  //   star.setAttribute("class", "star" + (3 - Math.floor(speed / 1000 / 8)));
+  //   star.style.backgroundColor = "white";
+  //   star.style.zIndex = "50";
   
-    universe.appendChild(star);
-    star.animate(
-      [
-        // {
-        //   transform: "translate3d(-" + width + "px, " + ypos + "px, 0)"
-        // },
-        {
-          transform: "translate3d(" + width + "px, " + ypos + "px, 0)"
-        },
-        {
-          transform:
-          "translate3d(-" + width + "px, " + ypos + "px, 0)"
-        }
-      ],
-      {
-        delay: Math.random() * -speed,
-        duration: speed,
-        iterations: 1000
-      }
-    );
-  }
+  //   universe.appendChild(star);
+  //   star.animate(
+  //     [
+  //       // {
+  //       //   transform: "translate3d(-" + width + "px, " + ypos + "px, 0)"
+  //       // },
+  //       {
+  //         transform: "translate3d(" + width + "px, " + ypos + "px, 0)"
+  //       },
+  //       {
+  //         transform:
+  //         "translate3d(-" + width + "px, " + ypos + "px, 0)"
+  //       }
+  //     ],
+  //     {
+  //       delay: Math.random() * -speed,
+  //       duration: speed,
+  //       iterations: 1000
+  //     }
+  //   );
+  // }
   
   // var elem = document.querySelector(".pulse");
   // var animation = elem.animate(
