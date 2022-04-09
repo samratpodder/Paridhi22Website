@@ -1114,3 +1114,13 @@ gallery */
       transform: translateY(0)!important;
     }
   }
+
+
+  .featured-event{
+      position: relative;
+      top: 20rem;
+  }
+  .featured{
+      transform: translateY(-300px);
+  }
+  
