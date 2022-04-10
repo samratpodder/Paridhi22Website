@@ -48,25 +48,29 @@ function scrollDown(pos){
     // when clicking + button, open header
     else{
       $("header").addClass("open");
-      document.getElementsByClassName("open")[0].style.zIndex = "-98";
-      // document.getElementsByClassName("enterbtn")[0].style.display = "none";
-      // setTimeout(
-      //   function(){
-      //     document.getElementsByClassName("enterbtn")[0].style.display = "none";
-      //   }
-      //   ,2000
-      // );
-      document.getElementById("enterbtn").style.opacity= "0";
-      document.getElementsByClassName("home-container")[0].classList.toggle("d-none");
-      setTimeout(function(){
-        [...document.getElementsByClassName("el")].forEach(element => {
-          // console.log(element);
-          element.classList.toggle("d-none");
-          element.style.display = "block";
-        });
-      }, 2000);
+      setTimeout(() => {
+        document.getElementsByClassName("open")[0].style.zIndex = "-98";
+        document.getElementById("navbar").classList.toggle("d-none");
+        // document.getElementsByClassName("enterbtn")[0].style.display = "none";
+        // setTimeout(
+        //   function(){
+        //     document.getElementsByClassName("enterbtn")[0].style.display = "none";
+        //   }
+        //   ,2000
+        // );
+        document.getElementById("enterbtn").style.opacity= "0";
+        document.getElementsByClassName("home-container")[0].classList.toggle("d-none");
+        setTimeout(function(){
+          [...document.getElementsByClassName("el")].forEach(element => {
+            // console.log(element);
+            element.classList.toggle("d-none");
+            element.style.display = "block";
+          });
+        }, 2000);
+        
+        window.scroll(0,0);
+      }, 500);
       
-      window.scroll(0,0);
       
     }
   });

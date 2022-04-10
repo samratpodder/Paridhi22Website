@@ -635,3 +635,6 @@ body{
   max-width: 100%;
   margin: auto;
 }
+#specialcol6{
+  align-self: center;
+}
