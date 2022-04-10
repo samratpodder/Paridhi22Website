@@ -6,6 +6,8 @@
 }
 @import url('http://fonts.cdnfonts.com/css/nexa-bold');
 @import url('http://fonts.cdnfonts.com/css/noise-machine');
+@import url('http://fonts.cdnfonts.com/css/gilroy-bold');
+@import url("//use.fontawesome.com/releases/v5.15.3/css/all.css");
 @font-face{
     font-family: 'Batman';
     src: url("../assets/fonts/batmanforever.ttf");
@@ -35,8 +37,11 @@ body{
     position: relative;
     left: 8%;
 }
+/* .title h1{
+    font-family: 'Gilroy-Bold', sans-serif;
+} */
 .paridhi-name{
-    font-family: Batman;
+    font-family: 'Gilroy-Bold', sans-serif;
 }
 .container{
     max-width: 100%;
@@ -75,6 +80,15 @@ body{
     border-radius: 25px;
     color: #fff !important;
 }
+.nav-box>span{
+    font-family: 'Clash Display';
+}
+/* .nav-box::before>span{
+    font-family: Nexa;
+}
+.nav-box:after>span{
+    font-family: Nexa;
+} */
 .navhome{
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -88,10 +102,10 @@ body{
    color:#fff;
 }
 .paridhi-name{
-    font-family: 'Red Hat Text';
+    /* font-family: 'Red Hat Text'; */
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 50px;
+    font-size: 80px;
     line-height: 30px;
 }
 .paridhi-name h1 {
@@ -178,9 +192,10 @@ body{
 .paridhi-desc{
    margin-top: 1rem;
    line-height: 18px;
-   font-size: 1.5rem;
-   text-align:left;
+   font-size: 2.5rem;
+   text-align:center;
    animation: text-flicker 1s linear infinite;
+   font-family: 'Product Sans', sans-serif;
 }
 
 
@@ -431,11 +446,15 @@ body{
     font-family: 'Product Sans',sans-serif;
     font-weight: 700;
     margin-right: 2rem;
+    color: black;
 }
 .fa-brands{
     color: #000;
     font-size: 1.1rem;
     padding-right: 1rem;
+}
+.fa-brands:before{
+    color: black;
 }
 .contacthead{
     font-family: 'Product Sans',sans-serif;
@@ -463,8 +482,9 @@ body{
     margin-top: -7rem;
     margin-left: 5rem;
 }
-.paridhi-name{
-    font-family: Batman;
+.paridhi-name h1{
+    font-family: 'Clash Display';
+    font-size: 2rem;
 }
 .about-heading{
     font-family: Batman;
@@ -686,7 +706,8 @@ body{
     }
     .about-para{
         margin-top: 3rem;
-        font-size: 21px;
+        font-size: 15px;
+        padding-right: 1.5rem;
     }
     .event-container{
         display: grid;
@@ -725,10 +746,17 @@ body{
     }
     .footer{
         flex-direction: column;
+        font-family:'Font Awesome 5 Brands';
     }
     .branding{
         margin-top: 1rem;
         margin-bottom: 3rem;
+    }
+    .featured {
+        transform: translateY(-750%);
+    }
+    .feature {
+        transform: translateY(-12%);
     }
 }
 @media(max-width:450px)
@@ -808,7 +836,7 @@ body{
         left: 0;
     } */
 }
-@media(max-width:400px)
+@media(max-width:420px)
 {
     .paridhi-name{
         font-size: 2rem;
@@ -1090,6 +1118,14 @@ gallery */
       margin-left: 20px;
     }
   }
+  @media(max-width:800px)
+  {
+    #event-btn {
+        position: relative;
+        top: 0rem;
+        margin-bottom: 5rem;
+    }
+  }
   @media screen and (max-width: 400px) {
     div.con div.card {
       width: 100%;
@@ -1139,4 +1175,9 @@ gallery */
  }
  .home-container{
      transform: translateY(9rem);
+ }
+ #event-btn{
+    position: relative;
+    top: 7rem;
+    margin-bottom: 9rem;
  }
