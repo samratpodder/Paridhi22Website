@@ -965,7 +965,8 @@ gallery */
     padding: 0;
     box-sizing: border-box;
     position: relative;
-    font-family: batman-forever;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
     color: white;
     transition: all 0.35s;
   }
@@ -1123,4 +1124,15 @@ gallery */
   .featured{
       transform: translateY(-300px);
   }
-  
+  #enterbtn::before, #enterbtn::after{
+      color: black;
+  }
+  .date{
+      text-align: center;
+  }
+ .feature{
+     transform: translateY(-95px);
+ }
+ .home-container{
+     transform: translateY(9rem);
+ }

@@ -8,10 +8,11 @@
   font-family: Batman;
   src: url("../assets/fonts/batmanforever.ttf");
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap');
 body {
   min-height: 300vh;
   background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+  
 }
 .noscroll {
   overflow: hidden;
@@ -150,7 +151,7 @@ content section {
   align-items: center;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  text-transform: uppercase;
+  
   font-size: 1em;
   letter-spacing: 2pt;
   color: #fff;
