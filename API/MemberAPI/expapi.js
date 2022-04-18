@@ -4,7 +4,7 @@ const fs = require('fs');
 const path = require('path');
 const csv = require('csv-parser');
 var results = [];
-const port = process.env.PORT;
+const port = process.env.PORT||5510;
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
@@ -14,7 +14,7 @@ app.get('/', (req, res) => res.send('Hello World!'));
 app.get('/api/v1/isAlive', (req, res) => res.send('<h1>API is Alive. Jo Bhi kaam hain bolo</h1>'));
 app.get('/api/v1/getDir',(req,res)=> {
     results=[];
-    fs.createReadStream('TeamData.csv')
+    fs.createReadStream('API\\MemberAPI\\TeamData.csv')
     .pipe(csv({}))
     .on('data',(data)=>{
       results.push(data)
