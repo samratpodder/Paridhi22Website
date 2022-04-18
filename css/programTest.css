@@ -1,0 +1,214 @@
+@font-face {
+  font-family: batman-forever;
+  src: url("../assets/fonts/batmanforever.ttf");
+}
+body{
+  margin: 0;
+  /* background-color: black !important; */
+  
+}
+
+/* HEADER SECTION */
+.header-sec{
+  width: 100%;
+  height: 8rem;
+  
+  box-sizing: border-box;
+  padding: 25px;
+}
+.header-wrap{
+  height: 100%;
+  width: 100%;
+  
+  text-align: center;
+}
+.header-wrap>span{
+  font-family: batman-forever;
+  height: 100%;
+  width: fit-content;
+  font-size: 55px;
+  color: white;
+}
+@media(max-width:821px){
+  .header-wrap>span{
+    font-size: 35px;
+  }
+}
+@media(max-width:450px){
+  .header-wrap>span{
+    font-size: 25px;
+  }
+}
+/*GALLERY SECTION*/
+.gallery-sec{
+  width: 100%;
+  height: max-content;
+}
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,800|Merriweather:300i");
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+  font-family: batman-forever;
+  color: white;
+  transition: all 0.35s;
+}
+
+body {
+  text-align: center;
+  min-height: 100vh;
+  
+}
+
+div.con div.card {
+  display: inline-block;
+  vertical-align: middle;
+  box-shadow: 0 0 30px -5px rgba(0, 0, 0, 0.4);
+  padding: 25px;
+  overflow: hidden;
+}
+div.con div.card:before, div.con div.card:after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+div.con div.card:before {
+  height: calc(100% + 30px);
+  background-size: cover;
+}
+div.con div.card:after {
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 -80px 90px -15px rgba(0, 0, 0, 0.75);
+}
+div.con div.card div.card_s {
+  top: 100%;
+  z-index: 2;
+}
+div.con div.card div.card_s p:first-of-type {
+  font-weight: 800;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  transform: translateY(-100%);
+}
+div.con div.card div.card_s p:nth-of-type(2) {
+  font-weight: 300;
+  font-size: 0.8rem;
+  line-height: 1.3;
+  /* font-style: italic; */
+  font-family: "product-sans-details", sans-serif;
+  margin-bottom: 18px;
+  opacity: 0;
+  transition: all 0.4s ease-in;
+}
+div.con div.card div.card_s button {
+  font-weight: 300;
+  border: 0;
+  font-size: 12px;
+  background: #000000;
+  padding: 10px 40px 12px;
+}
+div.con div.card div.card_s button:hover {
+  box-shadow: 0 0 0 2px #8fe9ff;
+}
+div.con div.card:hover:after {
+  background: rgba(0, 0, 0, 0.5);
+}
+div.con div.card:hover:before {
+  top: -30px;
+}
+div.con div.card:hover div.card_s {
+  top: 50%;
+  transform: translateY(-50%);
+}
+div.con div.card:hover div.card_s p:first-of-type {
+  transform: translateY(0%);
+}
+div.con div.card:hover div.card_s p:nth-of-type(2) {
+  opacity: 1;
+}
+.card1:before {
+  background-image: url(../assets/images/Campus_Ambassador.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+}
+.card2:before {
+  background-image: url(../assets/images/Robotics_Workshop_Manual.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+}
+.card3:before {
+  background-image: url(../assets/images/GFG_Webinar.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+}
+.card4:before {
+  background-image: url(../assets/images/Workshop.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+}
+@media screen and (min-width: 1100px) {
+  div.con {
+    top: 20vh;
+    transform: translateY(-50%);
+  }
+  div.con div.card {
+    width: 250px;
+    height: 350px;
+  }
+  div.con div.card:not(:first-of-type) {
+    margin-left: 20px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  div.con {
+    padding: 20px;
+  }
+  div.con div.card {
+    width: calc(50% - 20px);
+    margin-bottom: 20px;
+    height: 250px;
+  }
+  div.con div.card:nth-of-type(2n) {
+    margin-left: 20px;
+  }
+}
+@media screen and (max-width: 400px) {
+  div.con div.card {
+    width: 100%;
+    margin-left: 0 !important;
+  }
+}
+div.con div.card{
+  width: 100% !important;
+  text-align: center!important;
+}
+div.con{
+  transform: translateY(-60%)!important;
+  padding: 0 15px;
+}
+.row{
+  width: 100%;
+  margin: 0 auto !important;
+ 
+}
+@media(max-width:1100px){
+    div.con{
+        transform: translateY(-20%)!important;
+    }
+}
+@media(max-width:800px){
+  div.con{
+    transform: translateY(0)!important;
+  }
+}

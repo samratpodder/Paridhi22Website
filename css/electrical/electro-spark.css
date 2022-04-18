@@ -1,0 +1,319 @@
+@import url('http://fonts.cdnfonts.com/css/product-sans');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap');
+@import url('http://fonts.cdnfonts.com/css/neue-kabel');
+
+/* font-family: 'Product Sans', sans-serif;
+   font-family: 'Lato', sans-serif;
+   font-family: 'Red Hat Text', sans-serif;
+   font-family: 'Neue Kabel', sans-serif;
+                                                
+*/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background-color: #191919;
+    overflow-x: hidden;
+}
+
+.main-container {
+    height: 100vh;
+    color: #fff;
+    z-index: 100;
+}
+
+.event-nav {
+    margin: 2rem;
+    height: 2.6rem !important;
+    border-radius: 3rem;
+    padding-left: 2rem;
+    height: 2.5rem;
+    color: #000;
+    font-size: 1rem;
+    position: sticky;
+    top: 0rem;
+}
+
+.nav-logolink{
+    padding: 0;
+    position: relative;
+}
+.nav-logolink>span{
+    position: absolute;
+    left: 1.77rem;
+    font-weight: 700;
+    font-family: 'Product Sans', sans-serif;
+    letter-spacing: 0.125rem;
+}
+
+.list-icons{
+    margin-right: 0.6rem;
+}
+
+
+.nav-headlink{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 0.2rem;
+}
+.nav-headlink>div{
+    margin-right: 0.75rem;
+    padding: 0 0.7rem 0.125rem 0.7rem;
+    font-family: 'Product Sans', sans-serif;
+    cursor: pointer;
+}
+.nav-headlink>div:hover{
+    background-color: #000;
+    color: #fff;
+    border-radius: 2.5rem;
+}
+
+  
+.bgimg {
+    height: 80%;
+    width: 100%;
+    z-index: -100;
+    position: absolute;
+    top: 0;
+    background-image: url("https://wallpaperaccess.com/full/2024268.jpg");
+    background-size: cover;
+    background-position: center;
+   
+
+} 
+
+
+ /* todo opacity  */
+.bgimg>div{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to top,
+    rgba(25,25,25,1) 20%,
+    rgba(25,25,25,0.5) 70%,
+     rgba(25,25,25,0) 100%
+    );
+}
+
+
+.eventname {
+    font-family: 'Product Sans', sans-serif;
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.eventdiv {
+   margin-top: 5rem;
+}
+.eventdetails{
+    margin-top: 5rem;
+}
+
+.event-cardcol{
+   display: flex;
+}
+
+.event-rulesdesc ,.rules h3
+{   text-shadow:0px 0px 3px rgba(255,255,255,0.61);
+    font-size: 0.87rem;
+    font-weight: 700;
+}
+
+.event-type>span,
+.teamnum>span,
+.event-description>span,
+.coordinator>span,
+.score>span,
+.entryfees>span,
+.rules li,
+.event-cardbody>p
+{
+    font-size: 0.88rem;
+    font-weight: 300;
+}
+.rules li{
+    list-style:none;;
+    margin-top: 0.75rem;
+    letter-spacing: 0.025rem;
+}
+
+.disclamer{
+    color: #EBD671;
+    text-shadow: none;
+}
+
+.decmar{
+    margin-top: 1rem;
+}
+.event-card{
+    width:18rem;
+    margin: 1rem 0 0 5rem;
+    position: relative;
+    height: 18rem;
+    cursor: pointer;
+    border:none;
+    border-radius: 1.2rem;
+    z-index: -100;
+}
+
+.event-card>img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+}
+.event-cardbody{
+    position: absolute;
+    bottom: -1.5rem;
+}
+.event-cardbody>p{
+    color: #fff;
+    font-family: 'Neue Kabel', sans-serif;
+    letter-spacing: 0.05rem;
+    text-shadow:0px 0px 5px rgba(255,255,255,0.61);
+    opacity: 1;
+}
+
+.card-overlay{
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   bottom: 0;
+   background-color: #ff4655;
+   opacity: 0;
+}
+/* 
+.card-overlay:hover{
+    opacity: 0.4;
+    transform: translateX(-120%) skewX(-10deg);
+    transition: transform 3s cubic-bezier(.215,.61,.355,1);
+} */
+
+
+
+
+
+
+/* footer  */
+
+
+
+
+.footer{
+    margin-top: 2rem;
+    background-color:#fff;
+    width: 100%;
+    display: flex;
+    color: #000;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+}
+.toptext{
+    font-size: 3rem;
+    font-family: 'Red Hat Text',sans-serif;
+    font-weight: 900;
+}
+.follow>span{
+    font-size: 1.2rem;
+    font-family: 'Product Sans',sans-serif;
+    font-weight: 700;
+    margin-right: 2rem;
+}
+.footericoninsta{
+    font-weight:900;
+}
+.fa-brands{
+    color: #000;
+    font-size: 1.1rem;
+    padding-right: 1rem;
+}
+
+.contacthead{
+    font-family: 'Product Sans',sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.person{
+    line-height: 2rem;
+    font-weight: 400;
+}
+.person>a{
+    text-decoration: none;
+    color: #000;
+    transition: all 0.5s ease-in-out;
+}
+.person>a:hover{
+    color: rgb(11, 119, 202);
+    text-decoration: underline;
+}
+#hero-img{
+    width: 80%;
+    margin-top: -7rem;
+    margin-left: 5rem;
+}
+
+.copyright{
+    background-color: #fff;
+    color:#000;
+    text-align: center;
+}
+
+.footericonfb:hover ,.footericonlinkdin:hover{
+    color: #1877f2;
+}
+.footericoninsta:hover{
+  color: #b93a6f;
+}
+
+@media (max-width:512px){
+    .event-cardcol{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom:2rem;
+    }
+    .event-rulesdesc{
+       padding: 2rem;
+    }
+    .event-card{
+        width: 75vw;
+        margin: 5rem auto 0 auto;
+    }
+    .event-nav{
+        margin:0;
+        border-radius: 0;
+        padding-left: 0.5rem;
+        position: static;
+    } 
+    .footer{
+        display: block;
+        padding: 0.3rem;
+    }
+    .branding{
+        text-align: center;
+    }
+    .contacts{
+        margin-top: 2rem;
+        text-align: center;
+    }
+    .contacthead{
+       margin-bottom: 0.2rem;
+    }
+
+   
+}
