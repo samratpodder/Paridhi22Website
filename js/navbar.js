@@ -1,8 +1,4 @@
-$(document).ready(function () {
-    $(".toggle-box").click(function () {
-      $(this).toggleClass("open");
-      $(".navigator").toggleClass("show");
-      console.log("clicked");
-    });
-  });
-  
+$('#toggle').click(function() {
+  $(this).toggleClass('active');
+  $('#overlay').toggleClass('open');
+});

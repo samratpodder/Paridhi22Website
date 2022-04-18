@@ -12,6 +12,8 @@
   <link rel="stylesheet" href="../css/testNav.css">
 </head>
 <body style="background-color: rgb(0, 0, 0);">
+  <div id="particle-js" style="height: 100%; width: 100%; z-index: -10; position: fixed;"></div>
+
   <div class="preloader-contain">
     <div class="preloader">
         <div class="preloader__ring">
@@ -176,11 +178,29 @@
             </div>
           </div> -->
         </div>
+        <div class="row">
+          <div class="col-md-3" >
+            <div class="card card5">
+              <div class="card_s">
+                <p style=" text-shadow: 2px 2px #000000;"> <span style="font-size: smaller;">Autonomous</span> Robotics Workshop</p>
+                  <p>
+                    Develop your own Autonomous Robot <br>
+                    Intro to Arduino <br>
+                    Certificates Of Recognition <br>
+                    <!-- Get a free merchandise <br>
+                    Chance to win awesome goodies <br>
+                    Chance to meet eminent personalities <br> -->
+                  </p>
+                  <button disabled onclick="window.location.href='https://forms.gle/rBowHJCs8wgr24aD7';">Coming Soon</button>
+              </div>
+            </div>
+          </div>
+        </div>
     </div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="../js/programTest.js"></script>
+  <!-- <script src="../js/programTest.js"></script> -->
   <script src="../js/preloader.js"></script>
    <script
         src="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -193,5 +213,11 @@
         crossorigin="anonymous"
       ></script>
       <script src="../js/navbar.js" async defer></script>
+      <script src="../js/particles.js"></script>
+      <script>
+        particlesJS.load('particle-js', '../assets/particlesjs-config.json', function () {
+          console.log('callback - particles.js config loaded');
+        });
+      </script>
 </body>
 </html>

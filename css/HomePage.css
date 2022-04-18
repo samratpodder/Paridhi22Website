@@ -1181,3 +1181,79 @@ gallery */
     top: 7rem;
     margin-bottom: 9rem;
  }
+ .centerbrand
+ {
+     font-size: 5rem;
+ }
+ .heading-text{
+     display: flex;
+     flex-direction: row;
+        justify-content: center;
+ }
+ .centerbrand{
+     margin-left: -14rem;
+ }
+ @media(max-width:1440px)
+ {
+        .centerbrand{
+            margin-left: -12rem;
+            margin-top: 8rem;
+        }
+
+ }
+ @media(max-width:1300px)
+ {
+        .centerbrand{
+            margin-left: -10rem;
+            margin-top: 8rem;
+        }
+
+ }
+    @media(max-width:1200px)
+    {
+            .centerbrand{
+                margin-left: -10rem;
+                margin-top: 8rem;
+            }
+    
+    }
+    @media(max-width:1000px)
+    {
+            .centerbrand{
+                margin-left: -6rem;
+                margin-top: 8rem;
+            }
+    
+    }
+    @media(max-width:900px)
+    {
+            .centerbrand{
+                margin-left: -4rem;
+                margin-top: 8rem;
+            }
+    
+    }
+    @media(max-width:800px)
+    {
+            .centerbrand{
+                margin-left: -2rem;
+                margin-top: 8rem;
+            }
+    
+    }
+    @media(max-width:700px)
+    {
+            .centerbrand{
+                margin-left: -1rem;
+                margin-top: 8rem;
+            }
+    
+    }
+    @media(max-width:600px)
+    {
+            .centerbrand{
+                margin-left: -1rem;
+                margin-top: 8rem;
+            }
+    
+    }
