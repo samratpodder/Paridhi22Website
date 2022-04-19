@@ -107,6 +107,7 @@ body{
 }
 .body-container{
     max-width: 100%;
+    width: 80%;
     font-family: Gilroy-Light;
     box-sizing: border-box;
 }
@@ -167,6 +168,7 @@ body{
     box-shadow: 0px 5px 10px #000;
     margin-bottom: 12%;
     animation: 1s ease-out 0s 1 slideInFromLeft;
+    z-index: 99;
 }
 .card:nth-child(1){
     animation: 0.5s ease-out 0s 1 slideInFromLeft;
@@ -288,7 +290,7 @@ body{
     font-family: Gilroy-Light;
 }
 .pref{
-    margin-top: 36rem;
+    margin-top: 42rem;
 }
 @media (max-width:1100px)
 {
@@ -378,10 +380,11 @@ body{
         height: 190px;
     }
     .name{
-        font-size: 1rem;
+        font-size: 0.8rem;
+    padding: 1.5rem;
     }
     .email, .phone{
-        transform: scale(1.1,1.1);
+        transform: scale(1,1);
         /* display: none; */
         opacity: 0;
         transition: all 0.7s ease-in-out;
@@ -402,7 +405,19 @@ body{
         /* display: block; */
 
         opacity: 1;
+        /* height: 2rem; */
+        position: relative;
+        top: -1rem;
     }
+    .name{
+        padding-top: 0;
+    }
+    /* .spltext{
+        margin-top: -1rem;
+    } */
+    /* .socials{
+        margin-top: -2rem;
+    } */
 }
 @media (max-width:512px){
     .mobnav-li:hover , .mobnav-li:focus, .mobnav-li:active{
@@ -480,3 +495,13 @@ body{
         padding: 0px 9%;
     }
 }
+.glass-panel {
+    color: #fff;
+    margin: 40px auto;
+    background-color: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.1);
+    width: 100%;
+    border-radius: 15px;
+    padding: 3px;
+    backdrop-filter: blur(10px);
+  }

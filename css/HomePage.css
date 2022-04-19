@@ -12,6 +12,14 @@
     font-family: 'Batman';
     src: url("../assets/fonts/batmanforever.ttf");
 }
+@font-face{
+    font-family: 'Blanka';
+    src: url("../assets/fonts/Blanka-Regular.otf");
+}
+@font-face{
+    font-family: 'Underrated';
+    src: url("../assets/fonts/UNDERRATED-UltraBold\ Personal\ Use.otf");
+}
 @keyframes floatAnim {
     0% {
       transform: translateY(0rem);
@@ -202,20 +210,20 @@ body{
 .about-home{
      color: #fff;
     margin-top: 5rem;
-    padding: 1rem 30rem;
+    padding: 1rem 10rem;
 }
 .about-heading{
     font-family: "Product Sans", sans-serif;
     font-weight: 700;
     text-align: center;
-    font-size: 25px;
+    font-size: 36px;
     line-height: 28px;
     margin-bottom: 20px;
     letter-spacing: 0.3rem;
 }
 .about-para{
    text-align: center;
-   font-size: 14px;
+   font-size: 21px;
    letter-spacing: 1.2px;
 }
 
@@ -1152,7 +1160,7 @@ gallery */
   }
   @media(max-width:800px){
     div.con{
-      transform: translateY(0)!important;
+      transform: translaeY(0)!important;
     }
   }
 
@@ -1184,6 +1192,7 @@ gallery */
  .centerbrand
  {
      font-size: 5rem;
+     font-family: Blanka;
  }
  .heading-text{
      display: flex;
@@ -1196,8 +1205,8 @@ gallery */
  @media(max-width:1440px)
  {
         .centerbrand{
-            margin-left: -12rem;
-            margin-top: 8rem;
+            margin-left: -14rem;
+            margin-top:9rem;
         }
 
  }
@@ -1257,3 +1266,66 @@ gallery */
             }
     
     }
+    .paridhi>span{
+        font-size: 3rem;
+        font-family: 'Underrated'!important;
+        letter-spacing: 0.5rem;
+    }
+    .dates{
+        font-size: 2rem;
+        font-family: 'Blanka'!important;
+    }
+    .gallery-sec{
+        transform: translateY(15rem);
+        max-height: 100vh!important;
+    }
+    /* .gallery-sec{
+        position: relative;
+        top: 12rem;
+    } */
+    #row1{
+        margin-bottom: 2rem!important;
+    }
+    
+    .card1:before {
+        background-image: url(../assets/images/Campus_Ambassador.jpg)!important;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center; 
+      }
+      .card2:before {
+        background-image: url(../assets/images/Robotics_Workshop_Manual.jpg)!important;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center; 
+      }
+      .card3:before {
+        background-image: url(../assets/images/GFG_Webinar.jpg)!important;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center; 
+      }
+      .card4:before {
+        background-image: url(../assets/images/Workshop.jpg)!important;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center; 
+      }
+      .card5::before{
+        background-image: url(../assets/images/AUTOROBO.png)!important;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center; 
+      }
+      .card_s >p:nth-child(1){
+        font-family: 'Product Sans'!important;
+        font-size: 1.1rem!important;
+      }
+      .card_s >p:nth-child(2){
+        font-family: 'Product Sans'!important;
+        font-size: 0.9rem!important;
+      }
+      /* .card_s>button{
+        font-family: 'Gilroy-Bold'!important;
+        font-size: 0.6rem!important;
+      } */

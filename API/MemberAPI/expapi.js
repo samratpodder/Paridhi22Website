@@ -14,7 +14,7 @@ app.get('/', (req, res) => res.send('Hello World!'));
 app.get('/api/v1/isAlive', (req, res) => res.send('<h1>API is Alive. Jo Bhi kaam hain bolo</h1>'));
 app.get('/api/v1/getDir',(req,res)=> {
     results=[];
-    fs.createReadStream('API\\MemberAPI\\TeamData.csv')
+    fs.createReadStream('TeamData.csv')
     .pipe(csv({}))
     .on('data',(data)=>{
       results.push(data)
@@ -26,7 +26,22 @@ app.get('/api/v1/getDir',(req,res)=> {
 
     
 });
-    
+
+app.get('/api/v1/getDir2',(req,res)=> {
+  results=[];
+  fs.createReadStream('2ndYRDATA.csv')
+  .pipe(csv({}))
+  .on('data',(data)=>{
+    results.push(data)
+  })
+  .on('end',()=>{
+    console.log(results[0]);
+    res.send(results);
+  });
+
+  
+});
+
 app.listen(port, () => {
-  console.log('Test API app listening on http://localhost:'+port);
+  console.log('Team API app listening on http://localhost:'+port);
 });
