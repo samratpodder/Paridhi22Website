@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/preloader.css">
+  <!-- <link rel="stylesheet" href="./css/HomePage.css"> -->
+  <link rel="stylesheet" href="./css/programTest.css">
+  <link rel="stylesheet" href="./css/HomePage.css">
+  <link rel="stylesheet" href="./css/testNav.css">
+  <link rel="icon" href="./assets/images/P.png" type="image/x-icon">
+  <title>Paridhi 2022</title>
+  <style>
+    h1 {
+      text-align: center;
+      text-transform: uppercase;
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 50px;
+      color: #fff;
+      margin: 0 0;
+      align-self: flex-end;
+    }
+
+    @media screen and (max-width: 800px) {
+      .paridhi-heading h1 {
+        font-size: 30px;
+      }
+    }
+
+    .animation {
+      position: relative;
+      width: 100%;
+    }
+
+    .animation div {
+      overflow: hidden;
+      width: 50%;
+      height: 100%;
+      transform: skewX(-20deg);
+    }
+
+    .animation div::before {
+      content: "";
+      position: absolute;
+      width: 0%;
+      height: 4px;
+      background: #fff;
+    }
+
+    .animation span {
+      padding: 0 10px;
+    }
+
+    .animation-left::before {
+      left: 0;
+      animation: widthLineLeft 1.2s 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.1) forwards;
+    }
+
+    .animation-left span {
+      display: block;
+      animation: slideLeft 1.2s 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.1) forwards;
+      transform: translateX(200px) skewX(20deg);
+    }
+
+    .animation-right {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    .animation-right:before {
+      bottom: 0;
+      right: 0;
+      animation: widthLineRight 1.2s 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.1) forwards;
+    }
+
+    .animation-right span {
+      position: absolute;
+      width: 100%;
+      left: -100%;
+      transform: translateX(-200px) skewX(20deg);
+      animation: slideRight 1.2s 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.1) forwards;
+    }
+
+    @keyframes slideLeft {
+      from {
+        transform: translateX(200px) skewX(20deg);
+      }
+
+      to {
+        transform: translateX(0%) skewX(20deg);
+      }
+    }
+
+    @keyframes slideRight {
+      from {
+        transform: translateX(-200px) skewX(20deg);
+      }
+
+      to {
+        transform: translateX(0%) skewX(20deg);
+      }
+    }
+
+    @keyframes widthLineLeft {
+      0% {
+        width: 0%;
+        left: 0%;
+      }
+
+      50% {
+        width: 100%;
+        left: 0%;
+      }
+
+      100% {
+        width: 0%;
+        left: 100%;
+      }
+    }
+
+    @keyframes widthLineRight {
+      0% {
+        width: 0%;
+        right: 0%;
+      }
+
+      50% {
+        width: 100%;
+        right: 0%;
+      }
+
+      100% {
+        width: 0%;
+        right: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body id="body">
+  <!-- <div id="particle-js" style="height: 100%; width: 100%; z-index: -10; position: fixed;"></div> -->
+  <div class="preloader-contain">
+    <div class="preloader">
+      <div class="preloader__ring">
+        <div class="preloader__sector">L</div>
+        <div class="preloader__sector">o</div>
+        <div class="preloader__sector">a</div>
+        <div class="preloader__sector">d</div>
+        <div class="preloader__sector">i</div>
+        <div class="preloader__sector">n</div>
+        <div class="preloader__sector">g</div>
+        <div class="preloader__sector">.</div>
+        <div class="preloader__sector">.</div>
+        <div class="preloader__sector">.</div>
+        <div class="preloader__sector"></div>
+        <div class="preloader__sector"></div>
+        <div class="preloader__sector"></div>
+        <div class="preloader__sector"></div>
+        <div class="preloader__sector"></div>
+        <div class="preloader__sector"></div>
+        <div class="preloader__sector"></div>
+        <div class="preloader__sector"></div>
+        <div class="preloader__sector"></div>
+        <div class="preloader__sector"></div>
+        <div class="preloader__sector"></div>
+        <div class="preloader__sector"></div>
+        <div class="preloader__sector"></div>
+        <div class="preloader__sector"></div>
+        <div class="preloader__sector"></div>
+        <div class="preloader__sector"></div>
+        <div class="preloader__sector"></div>
+        <div class="preloader__sector"></div>
+        <div class="preloader__sector"></div>
+        <div class="preloader__sector"></div>
+      </div>
+      <div class="preloader__ring">
+        <div class="preloader__sector">L</div>
+        <div class="preloader__sector">o</div>
+        <div class="preloader__sector">a</div>
+        <div class="preloader__sector">d</div>
+        <div class="preloader__sector">i</div>
+        <div class="preloader__sector">n</div>
+        <div class="preloader__sector">g</div>
+        <div class="preloader__sector">.</div>
+        <div class="preloader__sector">.</div>
+        <div class="preloader__sector">.</div>
+        <div class="preloader__sector"></div>
+        <div class="preloader__sector"></div>
+        <div class="preloader__sector"></div>
+        <div class="preloader__sector"></div>
+        <div class="preloader__sector"></div>
+        <div class="preloader__sector"></div>
+        <div class="preloader__sector"></div>
+        <div class="preloader__sector"></div>
+        <div class="preloader__sector"></div>
+        <div class="preloader__sector"></div>
+        <div class="preloader__sector"></div>
+        <div class="preloader__sector"></div>
+        <div class="preloader__sector"></div>
+        <div class="preloader__sector"></div>
+        <div class="preloader__sector"></div>
+        <div class="preloader__sector"></div>
+        <div class="preloader__sector"></div>
+        <div class="preloader__sector"></div>
+        <div class="preloader__sector"></div>
+        <div class="preloader__sector"></div>
+      </div>
+    </div>
+  </div>
+  <div class="nav-container">
+    <div class="button_container" id="toggle">
+      <span class="top"></span>
+      <span class="middle"></span>
+      <span class="bottom"></span>
+    </div>
+
+    <div class="overlay" id="overlay">
+      <nav class="overlay-menu">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="./html/event.html">Event</a></li>
+          <li><a href="./html/programs.html">Programs</a></li>
+          <li><a href="./html/pre-paridhi.html">Pre Paridhi Events</a></li>
+          <li><a href="./html/team.html">Team</a></li>
+          <li><a href="./html/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div id="particle-js" style="height: 100%; width: 100%; z-index: -10; position: fixed;"></div>
+  <div class="container">
+    <!-- paridhi heading & animation svg -->
+    <div class="hero">
+      <div class="paridhi-heading" style="display: flex; flex-direction: row; text-align: center; justify-content: center;">
+        <div class="heading-text" style="display: flex;">
+          <!-- <div class="heading-imageContainer" style="height: 100%; width: 100%;">
+            <img src="./assets/images/P.png" style="height: 100%; width: 100%;" />
+          </div> -->
+          <h1>
+            <div class="animation">
+              <div class="animation-left"><span class="main-heading">PARIDHI</span></div>
+              <div class="animation-right"><span class="main-heading">PARIDHI</span></div>
+            </div>
+          </h1>
+        </div> 
+      </div>
+      <div class="edition">
+        <span class="digits">10</span>th Edition
+      </div>
+      <div class="dates">
+        6th - 7th - 8th May 2022
+      </div>
+    </div>
+    
+    <!-- About us details -->
+
+    <div class="about-home" id="aboutus">
+
+      <div class="about-heading">
+        ABOUT US
+      </div>
+      <div class="about-para">
+        Megatronix is known to organize one of the best technical fests of Kolkata, PARIDHI, the First Version of which
+        was held on 17th and 18th March 2012. With an all total of 41 events, the Sixth Edition of the Three-Day Annual
+        Inter-College Technical Festival, Paridhi 2017-18 set a whole new level in terms of success and popularity
+        amongst students throughout the city and beyond. It is one of the biggest fest of Eastern India with
+        participation from all across India. This year we are hosting the 10th edition of Paridhi with an elegant array
+        of events. Hope to see you soon on campus.
+      </div>
+    </div>
+
+    <!-- 1st carousel -->
+    <div id="carouselExampleIndicators" class="carousel slide carousel-container" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" id="carousel-btn"
+          class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" id="carousel-btn"
+          aria-label="Slide 2"></button>
+
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" id="carousel-btn"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" id="carousel-btn"
+          aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" id="carousel-btn"
+          aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" id="carousel-btn"
+          aria-label="Slide 6"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" id="carousel-btn"
+          aria-label="Slide 7"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" id="carousel-btn"
+          aria-label="Slide 8"></button>
+      </div>
+      <div class="carousel-inner ">
+        <div class="carousel-item carousel-innercontainer active">
+          <img src="./assets/images/in.jpg" class="carousel-img" alt="...">
+        </div>
+        <div class="carousel-item carousel-innercontainer">
+          <img src="./assets/images/out.jpg" class="carousel-img" alt="...">
+        </div>
+        <div class="carousel-item carousel-innercontainer">
+          <img src="./assets/images/bsh.jpg" class="carousel-img" alt="...">
+        </div>
+        <div class="carousel-item carousel-innercontainer">
+          <img src="./assets/images/tot.jpg" class="carousel-img" alt="...">
+        </div>
+        <div class="carousel-item carousel-innercontainer">
+          <img src="./assets/images/buildingatparidhi.jpg" class="carousel-img" alt="...">
+        </div>
+        <div class="carousel-item carousel-innercontainer">
+          <img src="./assets/images/inaugurationparidhi2020.jpg" class="carousel-img" alt="...">
+        </div>
+        <div class="carousel-item carousel-innercontainer">
+          <img src="./assets/images/roboticsarena.jpg" class="carousel-img " alt="...">
+        </div>
+        <div class="carousel-item carousel-innercontainer">
+          <img src="./assets/images/20220330_165534.jpg" class="carousel-img " alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+    <!-- events--domain -->
+
+
+    <div class="event-heading" id="events">
+      DOMAIN
+    </div>
+    <div class="gallery-sec">
+      <div class="con">
+        <div class="row" id="row1">
+          <div class="col-md-4" align="center">
+            <div class="card card4 dCard-1">
+              <div class="card_s">
+                <p style=" text-shadow: 2px 2px #000000;">CODING</p>
+                  
+                  <!-- <button onclick="window.location.href='./html/event.html';">SHOW MORE</button> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4" align="center">
+            <div class="card card4 dCard-2">
+              <div class="card_s">
+                <p style=" text-shadow: 2px 2px #000000;">ROBOTICS</p>
+                  
+                <!-- <button onclick="window.location.href='./html/event.html';">SHOW MORE</button> -->
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-4" align="center">
+            <div class="card card4 dCard-3">
+              <div class="card_s">
+                <p style=" text-shadow: 2px 2px #000000;">ELECTRICAL</p>
+                  
+                <!-- <button onclick="window.location.href='./html/event.html';">SHOW MORE</button> -->
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <div class="row">
+          <div class="col-md-4 ">
+            <div class="card card4 dCard-4">
+              <div class="card_s">
+                <p style=" text-shadow: 2px 2px #000000;">GAMING</p>
+                
+                <!-- <button onclick="window.location.href='./html/event.html';">SHOW MORE</button> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 ">
+            <div class="card card4 dCard-5">
+              <div class="card_s">
+                <p style=" text-shadow: 2px 2px #000000;">CIVIL</p>
+                
+                <!-- <button onclick="window.location.href='./html/event.html';">SHOW MORE</button> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4" align="center">
+            <div class="card card4 dCard-6">
+              <div class="card_s">
+                <p style=" text-shadow: 2px 2px #000000;">GENERAL</p>
+                  
+                <!-- <button onclick="window.location.href='./html/event.html';">SHOW MORE</button> -->
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <!--FEATURED EVENTS-->
+  <div class="featured-events"><div class="featured-events-heading">FEATURED EVENTS</div>
+  <div class="gallery-sec">
+    <div id="con-two" class="con con-two">
+      <div class="row" id="row1">
+        <div class="col-md-4" align="center">
+          <div class="card card4 dCard-7">
+            <div class="card_s">
+              <p style=" text-shadow: 2px 2px #000000;">CODE TYRO</p>
+                
+                <button onclick="window.location.href='./html/coding/code-tyro.html';">REGISTER</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" align="center">
+          <div class="card card4 dCard-8">
+            <div class="card_s">
+              <p style=" text-shadow: 2px 2px #000000;">DODGE IT</p>
+                
+                <button onclick="window.location.href='./html/autonomous/DodgeIT.html';">REGISTER</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-4" align="center">
+          <div class="card card4 dCard-9">
+            <div class="card_s">
+              <p style=" text-shadow: 2px 2px #000000;">FUZLON</p>
+                
+                <button onclick="window.location.href='./html/electrical/fuzlon.html';">REGISTER</button>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <div class="row">
+        <div class="col-md-4 ">
+          <div class="card card4 dCard-10">
+            <div class="card_s">
+              <p style=" text-shadow: 2px 2px #000000;">CS:GO</p>
+              
+              <button onclick="window.location.href='./html/gaming/CSGO.html';">REGISTER</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 ">
+          <div class="card card4 dCard-11">
+            <div class="card_s">
+              <p style=" text-shadow: 2px 2px #000000;">SETU BANDHAN</p>
+              
+              <button onclick="window.location.href='./html/civil/setu-bandhan.html';">REGISTER</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" align="center">
+          <div class="card card4 dCard-12">
+            <div class="card_s">
+              <p style=" text-shadow: 2px 2px #000000;">VENGEANCE</p>
+                
+                <button onclick="window.location.href='./html/manual/vengeance.html';">REGISTER</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+<div class="show-more-wrap">
+  <button onclick="window.location.href='./html/event.html';" class="show-more">EXPLORE</button>
+</div>
+</div>
+  
+      <!-- <div class="branding">
+        <div class="toptext">PARIDHI</div>
+        <div class="follow">
+          <span>Follow Us</span>
+          <a href="https://www.facebook.com/msitparidhi2022/" target="_blank" rel="noopener noreferrer"><i
+              class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.instagram.com/megatronix_msit/" target="_blank" rel="noopener noreferrer"><i
+              class="fa-brands fa-instagram-square"></i></a>
+          <a href="https://www.linkedin.com/company/msitmegatronix/" target="_blank" rel="noopener noreferrer"><i
+              class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div> -->
+
+  </div>  
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="./js/preloader.js"></script>
+<script src="./js/particles.js"></script>
+<script src="./js/navbar.js" async defer></script>
+<script>
+  particlesJS.load('particle-js', './assets/particlesjs-config.json', function () {
+    console.log('callback - particles.js config loaded');
+  });
+</script>
+
+</html>

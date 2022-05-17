@@ -107,6 +107,7 @@ body{
 }
 .body-container{
     max-width: 100%;
+    width: 80%;
     font-family: Gilroy-Light;
     box-sizing: border-box;
 }
@@ -160,13 +161,15 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content:space-between;
     border-radius: 5%;
     background-color: #202020;
     /* padding: 1px; */
     box-shadow: 0px 5px 10px #000;
     margin-bottom: 12%;
     animation: 1s ease-out 0s 1 slideInFromLeft;
+    z-index: 99;
+    box-sizing: border-box;
 }
 .card:nth-child(1){
     animation: 0.5s ease-out 0s 1 slideInFromLeft;
@@ -181,12 +184,15 @@ body{
     animation: 2s ease-out 0s 1 slideInFromLeft;
 }
 .card-content{
-    display: flex;
+    display: inline-flex;
+    width: 100%;
     flex-direction: column;
     align-items: center;
     line-height: 20%;
     margin-top: 1.2rem;
     padding: 0% 10%;
+    box-sizing: border-box;
+    
 }
 .card-image{
     align-items: center;
@@ -197,10 +203,10 @@ body{
 }
 .card-image img{
     object-fit: cover;
-    max-width: 100%;
+    
     width: 100%;
     height: 200px;
-    clip-path: circle(40% at 50% 50%);
+    /* clip-path: circle(40% at 50% 50%); */
     /* max-width: auto; */
     /* max-height: 50%; */
 }
@@ -275,6 +281,8 @@ body{
 }
 .name{
     font-family: Gilroy-ExtraBold;
+    word-wrap: break-word;
+    width: 100%;
 }
 .heading, .yearhead{
     text-align: center;
@@ -288,7 +296,7 @@ body{
     font-family: Gilroy-Light;
 }
 .pref{
-    margin-top: 36rem;
+    margin-top: 42rem;
 }
 @media (max-width:1100px)
 {
@@ -313,7 +321,7 @@ body{
         margin-top: 0.9rem;
     }
     .card-content{
-        padding: 0px 9%;
+        padding: 0px;
     }
 }
 @media (max-width:768px)
@@ -369,19 +377,22 @@ body{
     }
     .card{
         max-height: 400px;
-        height:300px;
+
+        height:max-content;
         transition: width 0.35s, height 0.35s;
+        padding: 10px;
     }
     .card-image img{
         max-width : auto;
-        width: 8rem;
-        height: 190px;
+        width: 100%;
+        height: 150px;
     }
     .name{
-        font-size: 1rem;
+        font-size: 0.8rem;
+        padding-bottom: 1rem;
     }
     .email, .phone{
-        transform: scale(1.1,1.1);
+        transform: scale(1,1);
         /* display: none; */
         opacity: 0;
         transition: all 0.7s ease-in-out;
@@ -402,7 +413,22 @@ body{
         /* display: block; */
 
         opacity: 1;
+        /* height: 2rem; */
+        position: relative;
+        top: -1rem;
     }
+    .name{
+        padding-top: 0;
+    }
+    /* .spltext{
+        margin-top: -1rem;
+    } */
+    /* .socials{
+        margin-top: -2rem;
+    } */
+    /* .spltxt, .socials{
+      display: none;  
+    } */
 }
 @media (max-width:512px){
     .mobnav-li:hover , .mobnav-li:focus, .mobnav-li:active{
@@ -457,6 +483,10 @@ body{
 }
 @media (max-width:375px)
 {
+    .card-img{
+        width: 100%;
+        height: 120px;
+    }
     .cards{
         grid-gap: 1% 5%;
     }
@@ -480,3 +510,19 @@ body{
         padding: 0px 9%;
     }
 }
+.glass-panel {
+    color: #fff;
+    margin: 40px auto;
+    background-color: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.1);
+    width: 100%;
+    border-radius: 15px;
+    padding: 10px;
+    backdrop-filter: blur(10px);
+  }
+  @media(max-width:512px){
+      .glass-panel{
+          padding: 10px;
+          height: max-content;
+      }
+  }
