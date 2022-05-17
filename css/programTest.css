@@ -5,6 +5,7 @@
 body{
   margin: 0;
   /* background-color: black !important; */
+  background: #191919!important;
   
 }
 
@@ -63,7 +64,7 @@ body {
   
 }
 div.con{
-  top: 30rem;
+  
 }
 div.con div.card {
   display: inline-block;
@@ -119,12 +120,11 @@ div.con div.card div.card_s button {
 div.con div.card div.card_s button:hover {
   box-shadow: 0 0 0 2px #8fe9ff;
 }
-div.con div.card:hover:after {
-  background: rgba(0, 0, 0, 0.5);
+
+div.con div.card div.card_s button:hover {
+  box-shadow: 0 0 0 2px #8fe9ff;
 }
-div.con div.card:hover:before {
-  top: -30px;
-}
+
 div.con div.card:hover div.card_s {
   top: 50%;
   transform: translateY(-50%);
@@ -132,34 +132,66 @@ div.con div.card:hover div.card_s {
 div.con div.card:hover div.card_s p:first-of-type {
   transform: translateY(0%);
 }
+
+
 div.con div.card:hover div.card_s p:nth-of-type(2) {
   opacity: 1;
 }
 .card1:before {
-  background-image: url(../assets/images/Campus_Ambassador.jpg);
+  background-image: url(../assets/images/Campus_Ambassador.jpg)!important;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center; 
 }
 .card2:before {
-  background-image: url(../assets/images/Robotics_Workshop_Manual.jpg);
+  background-image: url(../assets/images/Robotics_Workshop_Manual.jpg)!important;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center; 
 }
 .card3:before {
-  background-image: url(../assets/images/GFG_Webinar.jpg);
+  background-image: url(../assets/images/GFG_Webinar.jpg)!important;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center; 
 }
 .card4:before {
-  background-image: url(../assets/images/Workshop.jpg);
+  background-image: url(../assets/images/Workshop.jpg)!important;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center; 
 }
-.card5::before{
+.card5:before {
+  background-image: url(../assets/images/AUTOROBO.png)!important;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+}
+.dCard-1:before {
+  background-image: url(../assets/images/coding-domain.jpeg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+}
+.dCard-2:before {
+  background-image: url(../assets/images/autonomous-bots-domain.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+}
+.dCard-3:before {
+  background-image: url(../assets/images/civil-domain.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+}
+.dCard-4:before {
+  background-image: url(../assets/images/electrical-domain.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+}
+.dCard-5::before{
   background-image: url(../assets/images/AUTOROBO.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -167,7 +199,7 @@ div.con div.card:hover div.card_s p:nth-of-type(2) {
 }
 @media screen and (min-width: 1100px) {
   div.con {
-    top: 15rem;
+    top: 10rem;
     transform: translateY(-50%);
   }
   div.con div.card {
@@ -192,7 +224,7 @@ div.con div.card:hover div.card_s p:nth-of-type(2) {
     margin-left: 20px;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 800px) {
   div.con{
     top: 0rem;
   }
@@ -206,7 +238,7 @@ div.con div.card{
   text-align: center!important;
 }
 div.con{
-  transform: translateY(-60%)!important;
+  
   padding: 0 15px;
 }
 .row{
@@ -214,7 +246,7 @@ div.con{
   margin: 0 auto !important;
  
 }
-@media(max-width:1100px){
+@media(max-width:5000px){
     div.con{
         transform: translateY(-20%)!important;
     }
@@ -222,5 +254,32 @@ div.con{
 @media(max-width:800px){
   div.con{
     transform: translateY(0)!important;
+  }
+}
+
+
+
+
+.featured-events-heading{
+  margin-top: 5rem;
+  padding: 0 15px;
+  text-align: center;
+  font-size: 2rem;
+  
+}
+@media(min-width:450px){
+  .featured-events-heading{
+    transform: translateY(3rem);
+  }
+}
+@media(min-width:801px){
+  .conTwo{
+    margin-top: 6rem;
+    transform: translateY(0);
+  }
+}
+@media(min-width:1101px){
+  .conTwo{
+    margin-top: 10rem;
   }
 }

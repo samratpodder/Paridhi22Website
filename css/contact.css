@@ -22,12 +22,13 @@
 } */
 body{
     margin: 0;
-    background-color: black !important;
+    background: #191919;
     color: white;
 }
 
+
 .jumbotron{
-  margin-top: 10%;
+  margin-top: 5rem;
   text-align: center;
 }
 .jumbotron>h1{
@@ -92,7 +93,7 @@ body{
     text-decoration: none;
     text-emphasis: none;
     color: var(--fg);
-    font-size: 1rem;
+    font-size: 0.75rem;
 }
 .text>a:hover{
     border-bottom: 1px solid var(--fg);
@@ -237,7 +238,7 @@ body{
   }
   .card .content-wrap .item-title {
     display: inline-block;
-    font-size: 24px;
+    font-size: 18px;
     color: #ffffff;
     margin-bottom: 3px;
   }
@@ -499,6 +500,9 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 	color: antiquewhite;
     font-family: "product-sans-details", sans-serif;
 }
+.email>span, .phone>span, .location>span{
+  font-size: 20px;
+}
 .clubcontact a{
 	color: antiquewhite;
 	text-decoration: none;
@@ -514,7 +518,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 	padding-right: 1rem;
 }
 .clubcontact>div{
-	margin-bottom: 1.6rem;
+	margin-bottom: 1rem;
 }
 .diver{
 	height: 400px;

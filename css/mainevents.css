@@ -6,7 +6,7 @@
     margin: 0;
 }
 body{
-    background-color: rgb(0, 0, 0)!important; 
+    background-color: rgb(0, 0,) 0!important; 
 }
 .header-sec{
     width: 100%;
@@ -117,7 +117,7 @@ body{
     border: 1px solid rgba(255,255,255,0.1);
     width: 100%;
     border-radius: 15px;
-    padding: 32px;
+    padding: 3%;
     backdrop-filter: blur(10px);
 }
 .details-heading{
@@ -157,7 +157,6 @@ body{
     padding: 0.35rem 0.8rem;
     border-radius: 2rem;
     background-color: #fff;
-    margin-left: 0.65rem;
 
 
     display: inline-block;

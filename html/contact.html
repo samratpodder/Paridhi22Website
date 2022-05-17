@@ -13,7 +13,7 @@
     <link rel="shortcut icon" href="../assets/images/mega_logo.png" type="image/x-icon">
     <title>Contact Us</title>
 </head>
-<body style="background-color: rgb(55, 55, 55);">
+<body>
   <div class="preloader-contain">
     <div class="preloader">
         <div class="preloader__ring">
@@ -95,11 +95,14 @@
           <li><a href="../index.html">Home</a></li>
           <li><a href="./event.html">Event</a></li>
           <li><a href="./programs.html">Programs</a></li>
+          <li><a href="./pre-paridhi.html">Pre Paridhi Events</a></li>
+          <li><a href="./team.html">Team</a></li>
           <li><a href="./contact.html">Contact</a></li>
         </ul>
       </nav>
     </div>
   </div>
+  <div id="particle-js" style="height: 100%; width: 100%; z-index: -10; position: fixed;"></div>
     <div class="container-fluid">
       <div class="jumbotron">
         <h1>CONTACT US!</h1>
@@ -222,6 +225,12 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="../js/contact.js"></script>
     <script src="../js/preloader.js"></script>
+    <script src="../js/particles.js"></script>
     <script src="../js/navbar.js" async defer></script>
+    <script>
+      particlesJS.load('particle-js', '../assets/particlesjs-config.json', function () {
+        console.log('callback - particles.js config loaded');
+      });
+  </script>
 </body>
 </html>

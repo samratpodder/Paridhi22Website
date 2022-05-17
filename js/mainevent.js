@@ -2,19 +2,19 @@
 
 const domainDeatails =[
     {
-      id : 'Robotics',
+      id : 'Manual',
       idNo:1,
       domainName:'ROBOTICS EVENT',
       backgroundImgName:'https://images.unsplash.com/photo-1553095066-5014bc7b7f2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2FsbCUyMGJhY2tncm91bmR8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60',
       eventDetails: [{
           eventName:'HOT-WHEELS(On Spot(RACE))',
-          eventdescription:'Hot-wheel need unceremonious players and a hardcore elite in  order to exists. The climax of competitive scene players with a goal shoot for Players get to race, crash and speed their way to victory with the winner on spot. But beware, it is not a normal Game, it is the epic race of bot. Tune up your skills so you can go hard or just go home.',
+          eventdescription:'Hot-wheel need unceremonious players and a hardcore elite in  order to exist. The climax of competitive scene players with a goal shoot for Players get to race, crash and speed their way to victory with the winner on spot. But beware, it is not a normal Game, it is the epic race of bot. Tune up your skills so you can go hard or just go home.',
           coordinator:'Soumajit Mitra',
           coordinatorNo:'+91-9007809587',
           eventurl:'../html/manual/hotwheels.html',
       },
       {
-        eventName:'ROAD-TO-HEAVEN(Roborace)',
+        eventName:'ROAD-TO-HEAVEN(Race)',
         eventdescription:"You are trapped inside the eternal purgatory and only way out of this hell is to reach the gates of heaven. You have to race it out, crash and clear the obstacles as soon as possible on the \"Road to Heaven\" To gets the chance to finally have peace.",
         coordinator:'Rishov Banerjee',
         coordinatorNo:'+91-8337080341',
@@ -28,7 +28,7 @@ const domainDeatails =[
         eventurl:'../html/manual/Robo-Clash.html',
     },
     {
-        eventName:'ROCKET LEAGUE(Robosoccer)',
+        eventName:'ROCKET LEAGUE(Soccer)',
         eventdescription:"Battlefield is not the only field you are challenged, Soccer being the ultimate soul game for us, it's the soccer field too, and who can play it better than the engineers, in their own sophisticated way. Engineers have the knack of fusing technology with everything, and sports is no exception to that, so to celebrate this very spirit in a whole new dimension, we hail this event known as Rocket league.",
         coordinator:'Soumyadeep Majumder',
         coordinatorNo:'+91-7980333373',
@@ -58,35 +58,35 @@ const domainDeatails =[
         eventDetails: [
             {
                 eventName:'VALORANT',
-                eventdescription:"Valorant Tournament",
-                coordinator:'Parshan Banerjee',
-                coordinatorNo:'+91-7003405284',
+                eventdescription:"Don't let them say that you are Prodigy. Battle it out in this Valorant Tournament and be declared the best of the best.",
+                coordinator:'Sourajit Sarkar',
+                coordinatorNo:'+91-9475718250',
                 eventurl:'../html/gaming/valorant.html',
             },
             {
             eventName:'BGMI',
-            eventdescription:"BGMI Touranament",
+            eventdescription:"Play, fight and survive in this BGMI tournament, to not only get Chicken Dinners but also cash prizes. ",
             coordinator:'Parshan Banerjee',
             coordinatorNo:'+91-7003405284',
             eventurl:'../html/gaming/bgmi.html',
         },
         {
           eventName:'CSGO',
-          eventdescription:"CSGO Tournament",
+          eventdescription:"Flex your tactical shooting skills in our CSGO event and prove to the world, why you are the Best. ",
           coordinator:'Parshan Banerjee',
           coordinatorNo:'+91-7003405284',
           eventurl:'../html/gaming/CSGO.html',
       },
       {
         eventName:'FIFA',
-        eventdescription:"FIFA Tournament",
-        coordinator:'Parshan Banerjee',
-        coordinatorNo:'+91-7003405284',
+        eventdescription:"Score goals and win, it's as simple as that. Show us your skills and take take away money in our FIFA on spot event. ",
+        coordinator:'Sourajit Sarkar',
+        coordinatorNo:'+91-9475718250',
         eventurl:'../html/gaming/fifa.html',
     },
     {
         eventName:'NFS',
-        eventdescription:"NFS Tournament",
+        eventdescription:"Speed and thrill, are the two words that describe this event. Drift, speed and win, not only the race but also cash.",
         coordinator:'Akash Halder',
         coordinatorNo:'+91-8336059129',
         eventurl:'../html/gaming/nfs.html',
@@ -95,7 +95,7 @@ const domainDeatails =[
       {
         id : 'Electrical',
         idNo:3,
-        domainName:'Eletrical',
+        domainName:'Electrical',
         backgroundImgName:'pngegg.png',
         eventDetails: [{
             eventName:'Electro-Spark',
@@ -119,7 +119,7 @@ const domainDeatails =[
         backgroundImgName:'pngegg.png',
         eventDetails: [{
             eventName:'Clash of Coders',
-            eventdescription:"Are you a seasoned coder ? Or just starting your journey into the world of Sport Programming. You are exploring just the perfect event. A 2 hour long battle involving problem solving and brain wrenching bending of 1s & 0s. Fight your way up the leaderboard by solving most and fast;and Stand a Chance to win exciting Prizes & Goodiesi.",
+            eventdescription:"Are you a seasoned coder ? Or just starting your journey into the world of Sport Programming. You are exploring just the perfect event. A 2 hour long battle involving problem solving and brain wrenching bending of 1s & 0s. Fight your way up the leaderboard by solving most and fast;and Stand a Chance to win exciting Prizes & Goodies.",
             coordinator:'Deeptaneel Dey',
             coordinatorNo:'+91-7003297265',
             eventurl:'../html/coding/clash-of-coders.html',
@@ -132,17 +132,17 @@ const domainDeatails =[
           eventurl:'../html/coding/codehashers.html',
       },
       {
-        eventName:'Code Sprint',
-        eventdescription:"Megatronix presents an online coding event “Code Sprint”.",
-        coordinator:'Deeptaneel Dey',
-        coordinatorNo:'+91-7003297265',
-        eventurl:'../html/coding/codesprint.html',
+        eventName:'Code Tyro',
+        eventdescription:"Are you new in the college and searching for challenges? If yes, then Code Tyro is the perfect event for you to showcase your programming skills at a big platform. A competition only for first years, where you can go up the leaderboard by solving interesting programming problems. Don't miss this huge opportunity to challenge your very own batchmates . Equip yourselves to grab the winning prize this Paridhi.",
+        coordinator:'Aman Chowdhury',
+        coordinatorNo:'+91-8479062797',
+        eventurl:'../html/coding/code-tyro.html',
     },
     {
         eventName:'Web [.]In',
         eventdescription:" We have all thought of developing a designer website where all the details including as small as contacts to as large as a biography is present which is just a web address away to reaching the mass.So this is your chance to participate in Web.[IN] and develop your very OWN modish and edgy websites. This competition provides you the best platform to showcase your web dev skills and being unique can be rewarding as there are great cash prizes to win.  So what's the wait, join the event and become a part of Paridhi 2022",
-        coordinator:'Subinoy Mukherjee',
-        coordinatorNo:'+91-8210578027',
+        coordinator:'Aman Chowdhury',
+        coordinatorNo:'+91-8479062797',
         eventurl:'../html/coding/webin.html',
     }],
       },
@@ -153,26 +153,33 @@ const domainDeatails =[
         backgroundImgName:'pngegg.png',
         eventDetails: [{
             eventName:'Mega Arch',
-            eventdescription:"Wanna get some real life experience with various bridge then surly be a part of MEGA ARCH where you can make bridge with bricks and sand Paridhi 2022 brings to you Chances to win your pocket money just by making bridges that you all made in your childhood with cards. THIS EVENT IS OPEN FOR ALL.",
-            coordinator:'Anirban Ghosh',
-            coordinatorNo:'+91-7003165530',
+            eventdescription:"Arches since the longest of times have served as bridges, houses, forts and so on, being one of the most amazing civil creations of mankind. At event MegaArch you get the chance to create an arch of your own with the help of your teammates and recreate one of the most technical inventions by humans.",
+            coordinator:'Aditya Ranjan',
+            coordinatorNo:'+91-6204802033',
             eventurl:'../html/civil/megaarch.html',
         },
         {
           eventName:'Setu Bandhan',
-          eventdescription:"Aspiring to be a Civil engineer or trying to feel like one??? Then here is your chance Yes you can make your own bridge with only ice cream sticks and glue Paridhi 2022 brings to you another chance to test your skills, so what are you waiting for?? Pull up your socks and make the best bridge so that it can take the load of your fattest friend. THIS EVENT IS OPEN FOR ALL.",
-          coordinator:'Anirban Ghosh',
-          coordinatorNo:'+91-7003165530',
+          eventdescription:"Have you ever awed while looking at bridges and their intricacies, their magic to uphold the weight of so many people and vehicles! We all have at least once wished to construct a bridge. Event Setubandhan invites you to create a bridge of your own using the bare minimum materials like popsicles and glue.",
+          coordinator:'Aditya Ranjan',
+          coordinatorNo:'+91-6204802033',
           eventurl:'../html/civil/setu-bandhan.html',
       },
       {
+        eventName:'CAD O STORM',
+        eventdescription:"If designs, drawings, designing buildings tickle your nerves to excitement and AutoCAD software has made its way into the core of your heart and mind, CAD O STORM is sure to attract your interest. With basic yet unique designs, the event is sure to intrigue your creative mind.",
+        coordinator:'Bikram Pramanik',
+        coordinatorNo:'+91-7431967430',
+        eventurl:'../html/civil/cad.html',
+    },
+      {
         eventName:'Track-o-Treasure',
-        eventdescription:"If solving tricky yet easy sums in a minute is your hobby then come and join us in Paridhi 2022 and be a part of Track-o-treasure. All you need is a measuring tape and a mobile compass that will be provided. Just come and play to discover what's hidden for you at the end.",
-        coordinator:'Anirban Ghosh',
-        coordinatorNo:'+91-7003165530',
+        eventdescription:"Tricky are the ways of the world and our mind too loves tricky things. To treat your mind to tricky questions that needs to be solved in under a minute or two, we welcome you to participate in Track-o-treasure. A treasure hunt event that surely will create sparks in your mind and will make you addicted to itself. All you need is a measuring tape and a mobile compass that will be provided. Just come and play to discover what's hidden for you at the end.",
+        coordinator:'Aditya Ranjan',
+        coordinatorNo:'+91-6204802033',
         eventurl:'../html/civil/Track-o-treasure.html',
     }],
-      },
+        },
       {
         id : 'Autonomous',
         idNo:6,
@@ -205,7 +212,91 @@ const domainDeatails =[
           eventurl:'../html/autonomous/LineOChase.html',
       },
     ],
-      }]
+},
+{
+    id : 'General',
+      idNo:7,
+      domainName:'General',
+      backgroundImgName:'https://images.unsplash.com/photo-1553095066-5014bc7b7f2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2FsbCUyMGJhY2tncm91bmR8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60',
+      eventDetails: [{
+        eventName:'Binge Quiz',
+        eventdescription:"A quiz event for binge-watchers. The questions will be from acclaimed classic and recent web series",
+        coordinator:'Anirban Ghosh',
+        coordinatorNo:'+91-7003165530',
+        eventurl:'../html/general/binge-quiz.html',
+      },{
+        eventName:'Table Tennis',
+        eventdescription:"Are you a sports person and wondering where can you participate in Paridhi? Worry not we have just the right arrangement for you. Presenting to you the Table Tennis event, where you can compete with your friends and get bragging rights.",
+        coordinator:'Anirban Ghosh',
+        coordinatorNo:'+91-7003165530',
+        eventurl:'../html/general/table-tennis.html',
+      },
+      {
+        eventName:'Snyder\'s Cut',
+        eventdescription:"Videography is the art of combining images and sounds to create a visual experience. The event is a platform for you to showcase your skills and creativity.",
+        coordinator:'Anirban Ghosh',
+        coordinatorNo:'+91-7003165530',
+        eventurl:'../html/general/synder.html',
+      },
+      {
+        eventName:'SHUTTERIFY',
+        eventdescription:"Photography is the art of capturing Time. The event is a platform for you to showcase your skills and creativity in Photography.",
+        coordinator:'Anirban Ghosh',
+        coordinatorNo:'+91-7003165530',
+        eventurl:'../html/general/shutterify.html',
+      },
+    //   {
+    //     eventName:'SHUTTERIFY',
+    //     eventdescription:"Photography is the art of capturing Time. The event is a platform for you to showcase your skills and creativity in Photography.",
+    //     coordinator:'Anirban Ghosh',
+    //     coordinatorNo:'+91-7003165530',
+    //     eventurl:'../html/general/shutterify.html',
+    //   },
+      {
+        eventName:'INNOVATION CHALLENGE',
+        eventdescription:"There is an age old saying which goes, “It’s better to make a job than to find one”. We are currently living in the age of innovation and Start-ups! Megatronix, the Official Technical Club of Meghnad Saha Institute of Technology invites one and all to Innovation Challenge designed for the thinker and the doer in you.",
+        coordinator:'Anirban Ghosh',
+        coordinatorNo:'+91-7003165530',
+        eventurl:'../html/general/innovation-challenge.html',
+      },
+      {
+        eventName:'Darts',
+        eventdescription:"Darts is a game of speed and skill. The event is a platform for you to showcase your aiming skills in Darts.",
+        coordinator:'Anirban Ghosh',
+        coordinatorNo:'+91-7003165530',
+        eventurl:'../html/general/dart.html',
+      },
+    //   {
+    //     eventName:'INNOVATION CHALLENGE',
+    //     eventdescription:"There is an age old saying which goes, “It’s better to make a job than to find one”. We are currently living in the age of innovation and Start-ups! Megatronix, the Official Technical Club of Meghnad Saha Institute of Technology invites one and all to Innovation Challenge designed for the thinker and the doer in you.",
+    //     coordinator:'Anirban Ghosh',
+    //     coordinatorNo:'+91-7003165530',
+    //     eventurl:'../html/general/innovation-challenge.html',
+    //   },
+      {
+        eventName:'Chess',
+        eventdescription:"Chess is a game of strategy and skill. The event is a platform for you to showcase your chess skills in Chess and earn your bragging rights.",
+        coordinator:'Anirban Ghosh',
+        coordinatorNo:'+91-7003165530',
+        eventurl:'../html/general/chess.html',
+      },
+      {
+        eventName:'Carrom',
+        eventdescription:"Carrom is a game of aim and sense of direction and speed. The event is a platform for you to showcase your skills in Carrom and earn your bragging rights.",
+        coordinator:'Anirban Ghosh',
+        coordinatorNo:'+91-7003165530',
+        eventurl:'../html/general/carrom.html',
+      },
+      {
+          eventName:'Shark Tank',
+            eventdescription:"Shark Tank is the flame test for your new business. Building a Product or providing a Service? Participate and get insights about where you stand amongst others with your business. Cash Prizes for the best Business Plan",
+            coordinator:'Anirban Ghosh',
+            coordinatorNo:'+91-7003165530',
+            eventurl:'../html/general/shark-tank.html',
+      }
+    ]
+}
+]
 
 // dom target
 
@@ -290,6 +381,7 @@ domainList.forEach((e)=>{
 
 
 const makeElement =(data,domainName)=>{
+    // console.log(data)
     console.log(domainName.localeCompare("ROBOTICS EVENT"));
     const newlist = document.createElement('li')
     newlist.classList.add('event-eachdeatils')
@@ -299,7 +391,7 @@ const makeElement =(data,domainName)=>{
                         <div class="details-description">${data.eventdescription}</div>
                         <div class="coordinator">Coordinator: <span id="coordinator-name">${data.coordinator} (${data.coordinatorNo})</span></div>
                         <div class="event-detailsbtndiv">
-                        <button type="button" class=" event-detailsmorebtn "> <a href=${(domainName.localeCompare("ROBOTICS EVENT")&&domainName.localeCompare("Autonomous")&&domainName.localeCompare("Coding")&&domainName.localeCompare("GAMING EVENT")) == 0 ? data.eventurl : "#"} style="textdecoration:none;color:inherit" target="_blank">${(domainName.localeCompare("ROBOTICS EVENT")&&domainName.localeCompare("Autonomous")&&domainName.localeCompare("Coding")&&domainName.localeCompare("GAMING EVENT")) == 0 ? "SEE MORE" : "DETAIL COMING SOON"}</a><i style="margin-left:"0.5rem";" class="fa-solid fa-arrow-right-long"></i> </button>
+                        <button type="button" class=" event-detailsmorebtn "> <a href=${(!(data.eventName==='Carrom' || data.eventName==='Chess'||data.eventName==='Darts' ||data.eventName==='SHUTTERIFY'||data.eventName==='INNOVATION CHALLENGE' || data.eventName==='Table Tennis'|| data.eventName==='Binge Quiz'||data.eventName==='Snyder\'s Cut') && domainName.localeCompare("Civil")&&domainName.localeCompare("ROBOTICS EVENT")&&domainName.localeCompare("Autonomous")&&domainName.localeCompare("Coding")&&domainName.localeCompare("GAMING EVENT")&&domainName.localeCompare("Electrical")) == 0 ? data.eventurl : "#"} style="textdecoration:none;color:inherit" target="_blank">${( !(data.eventName==='Carrom' || data.eventName==='Chess'||data.eventName==='Darts' ||data.eventName==='SHUTTERIFY'||data.eventName==='INNOVATION CHALLENGE' || data.eventName==='Table Tennis'|| data.eventName==='Binge Quiz'||data.eventName==='Snyder\'s Cut')&&domainName.localeCompare("Civil")&&domainName.localeCompare("ROBOTICS EVENT")&&domainName.localeCompare("Autonomous")&&domainName.localeCompare("Coding")&&domainName.localeCompare("GAMING EVENT")&&domainName.localeCompare("Electrical")) == 0 ? "SEE MORE" : "DETAIL COMING SOON"}</a><i style="margin-left:"0.5rem";" class="fa-solid fa-arrow-right-long"></i> </button>
                         </div>
                     </li> 
     `
