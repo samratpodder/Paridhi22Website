@@ -4,6 +4,12 @@
     padding: 0;
     margin: 0;
 }
+@import url('http://fonts.cdnfonts.com/css/nexa-bold');
+@import url('http://fonts.cdnfonts.com/css/noise-machine');
+@font-face{
+    font-family: 'Batman';
+    src: url("../assets/fonts/batmanforever.ttf");
+}
 @keyframes floatAnim {
     0% {
       transform: translateY(0rem);
@@ -18,9 +24,19 @@
   #hero-img{
       animation: floatAnim 5s infinite;
   }
+  html{
+      overflow-x: hidden;
+  }
 body{
     background-color: #000;
     overflow-x: hidden;
+}
+#pagewrapper{
+    position: relative;
+    left: 2%;
+}
+.paridhi-name{
+    font-family: Batman;
 }
 .container{
     max-width: 100%;
@@ -66,7 +82,7 @@ body{
 }
 .paridhi-heading{
     margin: 8rem auto 0 auto;
-    max-width: 75%;  
+    max-width: 100%;  
 }
 .paridhi-details{
    color:#fff;
@@ -78,6 +94,80 @@ body{
     font-size: 50px;
     line-height: 30px;
 }
+.paridhi-name h1 {
+    letter-spacing: 10px;
+    color: #ffffff;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px blue, 0 0 30px blue, 0 0 40px blue, 0 0 55px blue, 0 0 75px blue;
+    text-align: center;
+    animation: text-flicker 1s linear infinite;
+  }
+  
+  @keyframes text-flicker {
+    0% {
+      opacity: 0.1;
+    }
+    
+    1% {
+      opacity: 0.9;
+    }
+    
+    5% {
+      opacity: 1;
+    }
+    
+    7% {
+      opacity: 0.5;
+    }
+    
+    15% {
+      opacity: 1;
+    }
+    
+    16% {
+      opacity: 0.3;
+    }
+    
+    20% {
+      opacity: 0.9;
+    }
+    
+    22% {
+      opacity: 0.7;
+    }
+    
+    30% {
+      opacity: 1;
+    }
+    
+    35% {
+      opacity: 1;
+    }
+    
+    50% {
+      opacity: 0.4;
+    }
+    
+    60% {
+      opacity: 1;
+    }
+    
+    64% {
+      opacity: 1;
+    }
+    
+    70% {
+      opacity: 0.2;
+    }
+    
+    85% {
+      opacity: 0.1;
+    }
+    
+    100% {
+      opacity: 1;
+    }
+  }
+  
 
 .paridhi-edition{
    line-height: 25px;
@@ -88,25 +178,11 @@ body{
 .paridhi-desc{
    margin-top: 1rem;
    line-height: 18px;
+   font-size: 1.5rem;
    text-align:left;
-   width: 80%;
+   animation: text-flicker 1s linear infinite;
 }
 
-.explore-btn{
-    background-color: #fff;
-    border: none;
-    margin-top: 2.5rem;
-    border-radius: 25px;
-    padding: 15px 30px;
-    font-size: 13px;
-    font-weight: 700;
-    line-height: 15px;
-    color: #000;
-}
-
-.explore-btn >i{
-   margin-left:5px;
-}
 
 .about-home{
      color: #fff;
@@ -183,12 +259,10 @@ body{
 .event6{
     grid-area: event6;
 }
-/* .event-card{
-    border: none;
-    border-radius:20px 20px 10px 10px;
-    padding: 0;
-    margin-bottom:30px;
-} */
+.event-card{
+   height: 80%;
+   width: 80%;
+}
 .eventcard-img{
     border-radius:20px 20px 0 0;
 }
@@ -219,15 +293,23 @@ body{
    width:100px;
    border-radius: 25px;
    padding: 5px;
+   z-index: 100;
 }
 .card{
-    background-color: #000;
+    background-color: #191919;
     border: none;
 }
 .card-top{
     border: 1px solid #fff;
-    border-radius:20px 20px 0px 0px;
+    border-radius:20px;
     padding: 0;
+    height: 90%;
+}
+
+.card-top > img {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
 }
 .card-text:last-child{
     margin-bottom:1rem;
@@ -251,8 +333,6 @@ body{
 .domain{
     font-family: 'Inter',sans-serif;
     position: relative;
-    margin-top: -90%;
-    left: 70%;
     font-style: normal;
     font-weight: 900;
     font-size: 1.5rem;
@@ -363,6 +443,7 @@ body{
     font-weight: 700;
     font-size: 1.5rem;
     margin-bottom: 1rem;
+    text-align: center;
 }
 .person{
     line-height: 2rem;
@@ -382,9 +463,29 @@ body{
     margin-top: -7rem;
     margin-left: 5rem;
 }
+.paridhi-name{
+    font-family: Batman;
+}
+.about-heading{
+    font-family: Batman;
+}
+.event-heading{
+    font-family: Batman;
+    letter-spacing: 0.3rem;
+}
+.event-viewbtn{
+    font-size: 18px;
+    width: 21rem;
+}
+.domain{
+    font-family: 'Nexa', sans-serif;
+    /* letter-spacing: 0.1rem;
+     */
+     font-weight: 600;
+}
 @media (min-width:1500px) {
     .navbar-brand{
-        margin-right: 33rem;
+        margin-right: 40rem;
     }
 }
 @media(max-width:1500px)
@@ -396,11 +497,17 @@ body{
         column-gap: 5rem;
     }
     .navbar-brand{
-        margin-right: 20rem;
+        margin-right: 27rem;
+    }
+    #pagewrapper{
+        left: 3%;
     }
 }
 @media(max-width:1100px)
 {
+    .navbar-brand{
+        margin-right: 15rem;
+    }
     .paridhi-name
     {
         font-size: 42px;
@@ -408,18 +515,22 @@ body{
     .paridhi-edition{
         padding: 5px 5px;
     }
-    .paridhi-desc{
-        width: 95%;
-    }
     #hero-img {
         margin-top: -4rem;
     }
     .about-home{
-        padding: 1rem 10rem;
+        padding: 1rem 1rem;
         max-width: 100%;
     }
     .event-container{
         column-gap: 1rem;
+    }
+    #pagewrapper{
+        position: relative;
+        left: 30%;
+    }
+    .cont{
+        max-width: 100%;
     }
 }
 @media(max-width:768px)
@@ -472,10 +583,28 @@ body{
         font-size: 34px;
     }
     .about-home {
-        padding: 1rem 7rem;
+        padding: 1rem 4rem;
     }
     .navbar-brand {
         max-width: 15%;
+    }
+    #pagewrapper{
+        position: relative;
+        left: 5%;
+    }
+    .paridhi-desc{
+        line-height: 35px;
+    }
+    .cont{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .event-card{
+        height: 100%;
+        width: 100%;
+    }
+    .domain{
+        font-size: 1.1rem;
     }
 }
 @media(max-width:512px)
@@ -552,11 +681,12 @@ body{
         padding: 0;
         margin-left: auto;
         margin-right: auto;
-        width: 75%;
+        width: 100%;
         margin-bottom: 9rem;
     }
     .about-para{
         margin-top: 3rem;
+        font-size: 21px;
     }
     .event-container{
         display: grid;
@@ -606,6 +736,77 @@ body{
     .explore-btn{
         left:3rem
     }
+    body{
+        overflow-x: hidden;
+    }
+    .date{
+        display: none;
+    }
+    .title{
+        left:0;
+    }
+    #pagewrapper{
+        position: relative;
+        left: 10rem;
+    }
+    .cont__inner{
+        display: grid;
+        grid-template-areas: "pic1 pic2 "
+                            "pic3 pic4"
+                            "pic5 pic5";
+    }
+    .el__heading{
+        font-size: 0.2rem;
+    }
+    .el__text{
+        font-size: 0.8rem;
+    }
+    .el__content{
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+    .el__close-btn{
+        width: 20px;
+        height: 20px;
+        top: 10px;
+        right: 15px;
+    }
+    #pic1{
+        grid-area: pic1;
+        position: relative;
+        /* width: 48%;
+        height: auto; */
+        left: 0rem;
+    }
+    #pic2{
+        grid-area: pic2;
+        position: relative;
+        /* width: 48%;
+        height: auto; */
+        left: -10rem;
+    }
+    #pic3{
+        grid-area: pic3;
+        position: relative;
+        left: -2rem;
+    }
+    #pic4{
+        grid-area: pic4;
+        position: relative;
+        left: -12rem;
+    }
+    #pic5{
+        grid-area: pic5;
+        position: relative;
+        left: -8rem;
+    }
+    /* .el{
+        position: relative;
+        width: 48%;
+        height: auto;
+        top: 0;
+        left: 0;
+    } */
 }
 @media(max-width:400px)
 {
@@ -625,3 +826,313 @@ body{
         margin-top: 1.5rem;
     }
 }
+.preloader{
+    height: 100%;
+    width: 100%;
+}
+.pulse {
+    height: 100px;
+    width: 200px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  .pulse:after {
+    content: '';
+    display: block;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 200px 100px" enable-background="new 0 0 200px 100px" xml:space="preserve"><polyline fill="none" stroke-width="3px" stroke="white" points="2.4,58.7 70.8,58.7 76.1,46.2 81.1,58.7 89.9,58.7 93.8,66.5 102.8,22.7 110.6,78.7 115.3,58.7 126.4,58.7 134.4,54.7 142.4,58.7 197.8,58.7 "/></svg>') 0 0 no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    -webkit-animation: 2s pulse linear infinite;
+    -moz-animation: 2s pulse linear infinite;
+    -o-animation: 2s pulse linear infinite;
+    animation: 2s pulse linear infinite;
+      clip: rect(0, 0, 100px, 0);
+  }
+  .pulse:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: 2px;
+    right: 2px;
+    bottom: 0;
+    top: 16px;
+    margin: auto;
+    height: 3px;
+  
+  }
+  
+  
+  @-webkit-keyframes pulse {
+    0% {
+      clip: rect(0, 0, 100px, 0);
+      opacity: 0.4;
+    }
+    4% {
+      clip: rect(0, 66.66667px, 100px, 0);
+      opacity: 0.6;
+    }
+    15% {
+      clip: rect(0, 133.33333px, 100px, 0);
+      opacity: 0.8;
+    }
+    20% {
+      clip: rect(0, 300px, 100px, 0);
+       opacity: 1;
+    }
+  
+    80% {
+      clip: rect(0, 300px, 100px, 0);
+       opacity:0;
+    }
+  
+    90% {
+      clip: rect(0, 300px, 100px, 0);
+      opacity: 0;
+    }
+  
+    100% {
+      clip: rect(0, 300px, 100px, 0);
+      opacity:0;
+   }
+  }
+  @keyframes pulse {
+    0% {
+      clip: rect(0, 0, 100px, 0);
+    }
+    4% {
+      clip: rect(0, 66.66667px, 100px, 0);
+    }
+    15% {
+      clip: rect(0, 133.33333px, 100px, 0);
+    }
+    20% {
+      clip: rect(0, 300px, 100px, 0);
+       opacity:1;
+    }
+  
+    80% {
+      clip: rect(0, 300px, 100px, 0);
+       opacity:0;
+    }
+  
+    90% {
+      opacity: 0;
+    }
+  
+    100% {
+      clip: rect(0, 300px, 100px, 0);
+      opacity:0;
+   }
+    
+  }
+/* .wrapper{
+    background: black;
+}
+header{
+    background:black;
+} */
+body{
+    background: #191919;
+}
+.toptext{
+    color: black;
+}
+.follow{
+    color: black;
+}
+.contacts{
+    color: black;
+}
+
+
+/* 
+gallery */
+.gallery-sec{
+    width: 100%;
+    height: max-content;
+  }
+  @import url("https://fonts.googleapis.com/css?family=Montserrat:300,800|Merriweather:300i");
+  *,
+  *:before,
+  *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: white;
+    transition: all 0.35s;
+  }
+  
+  body {
+    text-align: center;
+    min-height: 100vh;
+    
+  }
+  
+  div.con div.card {
+    display: inline-block;
+    vertical-align: middle;
+    box-shadow: 0 0 30px -5px rgba(0, 0, 0, 0.4);
+    padding: 25px;
+    overflow: hidden;
+  }
+  div.con div.card:before, div.con div.card:after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+  }
+  div.con div.card:before {
+    height: calc(100% + 30px);
+    background-size: cover;
+  }
+  div.con div.card:after {
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 -80px 90px -15px rgba(0, 0, 0, 0.75);
+  }
+  div.con div.card div.card_s {
+    top: 100%;
+    z-index: 2;
+  }
+  div.con div.card div.card_s p:first-of-type {
+    font-weight: 800;
+    font-size: 20px;
+    margin-bottom: 10px;
+    transform: translateY(-100%);
+  }
+  div.con div.card div.card_s p:nth-of-type(2) {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 1.3;
+    font-style: italic;
+    font-family: Merriweather;
+    margin-bottom: 18px;
+    opacity: 0;
+    transition: all 0.4s ease-in;
+  }
+  div.con div.card div.card_s button {
+    font-weight: 300;
+    border: 0;
+    font-size: 12px;
+    background: #000000;
+    padding: 10px 40px 12px;
+  }
+  div.con div.card div.card_s button:hover {
+    box-shadow: 0 0 0 2px #8fe9ff;
+  }
+  div.con div.card:hover:after {
+    background: rgba(0, 0, 0, 0.5);
+  }
+  div.con div.card:hover:before {
+    top: -30px;
+  }
+  div.con div.card:hover div.card_s {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  div.con div.card:hover div.card_s p:first-of-type {
+    transform: translateY(0%);
+  }
+  div.con div.card:hover div.card_s p:nth-of-type(2) {
+    opacity: 1;
+  }
+  div.con div.card:nth-of-type(1):before {
+    background-image: url(https://images.unsplash.com/photo-1491672329368-82e6606bce41?w=600);
+  }
+  div.con div.card:nth-of-type(2):before {
+    background-image: url(https://images.unsplash.com/photo-1510391532992-e1b94a277a3a?w=600);
+  }
+  div.con div.card:nth-of-type(3):before {
+    background-image: url(https://images.unsplash.com/photo-1540974317567-833d7d15f5a6?w=600);
+  }
+  div.con div.card:nth-of-type(4):before {
+    background-image: url(https://images.unsplash.com/photo-1520063777736-9e33e54c6822?w=600);
+  }
+  
+  @media screen and (min-width: 1100px) {
+    div.con {
+      top: 20vh;
+      transform: translateY(-50%);
+    }
+    div.con div.card {
+      width: 250px;
+      height: 350px;
+    }
+    div.con div.card:not(:first-of-type) {
+      margin-left: 20px;
+    }
+  }
+  @media screen and (max-width: 1100px) {
+    div.con {
+      padding: 20px;
+    }
+    div.con div.card {
+      width: calc(50% - 20px);
+      margin-bottom: 20px;
+      height: 250px;
+    }
+    div.con div.card:nth-of-type(2n) {
+      margin-left: 20px;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    div.con div.card {
+      width: 100%;
+      margin-left: 0 !important;
+    }
+  }
+  div.con div.card{
+    width: 100% !important;
+    text-align: center!important;
+  }
+  div.con{
+    transform: translateY(-60%)!important;
+    padding: 0 15px;
+  }
+  .row{
+    width: 100%;
+    margin: 0 auto !important;
+   
+  }
+  @media(max-width:1100px){
+      div.con{
+          transform: translateY(-20%)!important;
+      }
+  }
+  @media(max-width:800px){
+    div.con{
+      transform: translateY(0)!important;
+    }
+  }
+
+
+  .featured-event{
+      position: relative;
+      top: 20rem;
+  }
+  .featured{
+      transform: translateY(-300px);
+  }
+  #enterbtn::before, #enterbtn::after{
+      color: black;
+  }
+  .date{
+      text-align: center;
+  }
+ .feature{
+     transform: translateY(-95px);
+ }
+ .home-container{
+     transform: translateY(9rem);
+ }
